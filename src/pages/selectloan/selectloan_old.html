@@ -1,0 +1,47 @@
+<!--
+  Created by Akobundu Michael (P7543)
+-->
+<ion-header>
+
+  <ion-navbar color="fidelityBlue">
+    <ion-title>{{ 'SELECTLOAN_TITLE' | translate }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="app-content">
+<p style="margin-left:10px">{{ 'SELECTLOAN_SUBTITLE' | translate }}</p>
+<ion-card class="addaccount-card">
+  <ion-list class="addaccount-list">
+    <button  *ngIf="bankaccounts.length" (click)="bankaccounts.length ? showAccounts() : showAddaccountAlert()" ion-item style="font-size:18px">
+      <div *ngIf="!accountSelected">
+        {{ 'SELECTACCOUNT_ALT' | translate }}
+      </div>
+      <ion-item *ngIf="accountSelected" style="margin-top:10px">
+        <h2> Bank Name: {{selectedAccount.bankName}}</h2>
+        <p>Account #: {{selectedAccount.censoredAccountNo}}</p>
+    </ion-item>
+      <button ion-button clear showWhen="android" item-end>
+        <ion-icon style="font-size:30px;color:gray" name="ios-arrow-forward" showWhen="android"></ion-icon>
+      </button>
+    </button>
+
+    <p padding style="color:gray">{{ 'ADDACCOUNT_TITLE' | translate }}</p>
+    <button ion-item style="font-size:17px" (click)="showAddaccountownModal(true)">
+      <ion-icon style="font-size:50px" name="ios-add-circle" color="fidelityGreen" item-start></ion-icon>
+      {{ 'FIDELITY_ACCOUNT' | translate }}
+    </button>
+
+    <!--<button ion-item style="font-size:17px" (click)="showAddaccountModal()">
+      <ion-icon style="font-size:50px" name="ios-add-circle" color="fidelityGreen" item-start></ion-icon>
+      {{ 'OTHERBANK_ACCOUNT' | translate }}
+    </button>-->
+
+  </ion-list>
+  <div align="center" style="margin-top:-40px">
+    <button ion-button color="fidelityGreen" (click)="gotoAddCard()" [disabled]="!isReadyToProceed" class="custom-button" round>{{ 'PROCEED_BUTTON' | translate }}</button>
+  </div>
+</ion-card>
+
+</ion-content>

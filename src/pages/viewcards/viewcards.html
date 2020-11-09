@@ -1,0 +1,39 @@
+<!--
+  Generated template for the SelectloanPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="fidelityBlue">
+    <ion-title>Select Payment Card</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="app-content">
+<p style="margin-left:10px">Please select a payment card below to associate with your loan</p>
+<ion-card style="padding-bottom: 50px; border-radius:10px">
+  <ion-list class="addaccount-list">
+    <button *ngIf="!isReadyToProceed" ion-item style="font-size:20px">
+      Select Card
+    </button>
+    <button *ngIf="isReadyToProceed" ion-item style="font-size:20px">
+      <p>MasterCard</p>
+      <p>*****************6790</p>
+    </button><hr/>
+
+    <button ion-item style="font-size:20px" (click)="showAddaccountModal()">
+      <ion-icon style="font-size:50px" name="ios-add-circle" color="fidelityGreen" item-start></ion-icon>
+      Add new card
+    </button>
+
+  </ion-list>
+  <div align="center" style="margin-top:70px">
+    <button ion-button color="fidelityGreen" [disabled]="!isReadyToProceed" (click)="gotoConfirmLoan()" class="custom-button" round>Proceed</button>
+  </div>
+</ion-card>
+
+</ion-content>

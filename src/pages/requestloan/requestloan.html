@@ -1,0 +1,58 @@
+<!--
+  Created by Akobundu Michael (P7543)
+-->
+<ion-header style="background-image: linear-gradient(#247BA0 0%, #0A2463);">
+
+  <ion-navbar transparent>
+    <ion-title style="color:#ffffff">Request for a Loan</ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
+  <ion-toolbar transparent>
+    <!--<div align="center">-->
+      <p class="request-level">25% Complete</p>
+      <img src="../../assets/img/progress1.png"/>
+      <ion-grid style="color:#ffffff;font-size:11px">
+        <ion-row>
+            <ion-col>
+                Loan Offers
+            </ion-col>
+            <ion-col>
+                Select Bank
+            </ion-col>
+            <ion-col>
+                Payment Card
+            </ion-col>
+            <ion-col>
+            Confirm Loan
+            </ion-col>
+        </ion-row>
+      </ion-grid>
+    <!--</div>-->
+
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <p class="sub-title" *ngIf="offers.length">You are eligible for the following offers</p>
+    <div class="box-wrapper" *ngIf="offers.length">
+        <ion-item *ngFor="let offer of offers" class="loan-card" (click)="selectLoan(offer)">
+            <h2 class="amount-display">&#8358;{{ offer.principal | moneyTransform }}</h2>
+            <p style="color:#3D5789;">{{offer.fee}}% interest, Due in {{offer.term}} days</p>
+            <button ion-button clear item-end>
+            <ion-icon class="icon-decorator" name="ios-arrow-forward"></ion-icon>
+            </button>
+        </ion-item>
+    </div>
+    <div *ngIf="!offers.length">
+      <div align="center">
+        <p class="message">{{ message }}</p>
+        <p class="follow-up">{{ follow_up_message }}</p>
+        <p><a (click)="gotoBalance()" *ngIf="userHasLoan" >Check loan balance</a></p>
+      </div>
+    </div>
+</ion-content>
+

@@ -1,0 +1,93 @@
+<!--
+  Created by Akobundu Michael (P7543)
+-->
+<ion-header style="background-image: linear-gradient(#247BA0 0%, #0A2463);">
+
+  <ion-navbar transparent>
+    <ion-title style="color:#ffffff">Extend Loan</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div *ngIf="!data.length">
+      <div align="center">
+        <p class="message">{{ message }}</p>
+      </div>
+  </div>
+  <div *ngIf="data.length">
+    <div align="center" style="color:#0A2463">
+      <p>{{ 'EXTENDLOAN_SUBTITLE' | translate }}</p>
+    </div>
+    <div align="center" style="color:#0A2463">
+      <h1 class="big-amount">&#8358;{{ data[0].newAmountDue | moneyTransform }}</h1>
+    </div>
+    <div align="center" style="color:#0A2463">
+      <p>{{ 'CONFIRM_INTEREST' | translate }} {{ data[0].fee}}%</p>
+    </div>
+  </div>
+    <ion-card *ngIf="data.length">
+  <ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <h2>Principal</h2>
+        </ion-col>
+        <ion-col>
+          <p>&#8358;{{ data[0].principal | moneyTransform }}</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <h2>Old amount</h2>
+        </ion-col>
+        <ion-col>
+          <p>&#8358;{{ data[0].oldAmountDue | moneyTransform }}</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <h2>Expiration</h2>
+        </ion-col>
+        <ion-col>
+          <p>{{ data[0].expiration | expirationTransform }}</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card-content>
+
+</ion-card>
+  <ion-card *ngIf="data.length">
+
+  <ion-card-content>
+    <h1 style="margin-left:15px">Payment Schedule</h1>
+    <ion-list>
+      <ion-item *ngFor="let payment of data[0].paymentSchedule">
+        <p>&#8358;{{ payment.amount | moneyTransform }}</p>
+        <p>{{ payment.dueDate | dateTransform }}</p>
+      </ion-item>  
+    </ion-list>
+    <ion-grid>
+            <ion-row >
+          <ion-col style="text-align:center">
+              <button ion-button (click)="acceptExtension()" style="border: 1px solid #FFFFFF;color: black ;margin-left:15px;box-sizing: border-box;border-radius: 2px;background-color: transparent !important"
+              
+              
+              >Accept</button>                
+          </ion-col>
+          <ion-col style="text-align:center">
+              <button ion-button (click)="rejectExtension()" style="border: 1px solid #FFFFFF;color: black ;margin-left:15px;box-sizing: border-box;border-radius: 2px;background-color: transparent !important">Reject</button>
+          </ion-col>
+        </ion-row>
+        </ion-grid>
+  </ion-card-content>
+</ion-card>
+</ion-content>
+<!--<ion-footer>
+  <ion-toolbar>
+      <div align="center">
+      <img src="../../assets/img/stage1.png" width="100" height="15"/>
+  </div>
+  </ion-toolbar>
+</ion-footer>-->

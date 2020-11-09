@@ -1,0 +1,62 @@
+page-directdebit {
+    .pay-button {
+        width: 285px;
+        height: 50px;
+        border: 1px solid #0A2463;
+        box-sizing: border-box;
+        border-radius: 2px;
+        margin-top: 30px;
+        background-color: transparent !important;
+        color:#0A2463;
+        margin-left: 20px;
+    }
+
+    ion-item{
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .second{
+      margin-top: 10px;
+    }
+
+    .but{
+      margin: 20px 8px;
+      width: 100%;
+      // ion-button{
+      //   width: 285px;
+      //   height: 50px;
+      //   border: 1px solid #0A2463;
+      //   box-sizing: border-box;
+      //   border-radius: 2px;
+      //   margin-top: 30px;
+      //   background-color: transparent !important;
+      //   color:#0A2463;
+      // }
+    }
+
+    // ion-item ion-input {
+    //     color:#0A2463;
+    //     font-weight: bold;
+    //     font-size:15px;
+    //     height: 56px;
+    //     min-width: 285px;
+    //     width: 285px;
+    //     background-color: transparent !important;
+    //     border-bottom: none !important;
+    //     margin-left: 10px;
+    // }
+
+    //     ion-item ion-select {
+    //     color:#0A2463;
+    //     font-weight: bold;
+    //     font-size:15px;
+    //     height: 56px;
+    //     min-width: 285px;
+    //     width: 285px;
+    //     background-color: transparent !important;
+    //     border-bottom: none !important;
+    //     margin-left: 10px;
+    // }
+
+}

@@ -1,0 +1,23 @@
+page-paywithcard {
+
+    .pay-card {
+        padding-bottom: 50px; 
+        border-radius:5px;
+        padding: 10px;
+    }
+
+    .amount-input {
+        margin-top: 10px;
+    }
+
+    .card-list {
+        background: rgba(239, 243, 247, 0.79);
+        border: 1px solid #247BA0;
+        box-sizing: border-box;
+        margin-top:5px;
+        height:96px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+}

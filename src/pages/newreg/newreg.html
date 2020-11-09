@@ -1,0 +1,63 @@
+<ion-header no-border>
+
+  <ion-navbar transparent>
+    <ion-title>Reregister Account</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="app_bg" style="height: 100%">
+  <form [formGroup]="newreg" (submit)="newRegistration()">
+
+    <div align="center" class="regForm">
+      <ion-item>
+          <ion-input type="password" formControlName="password" placeholder="Password"></ion-input>
+        </ion-item>
+
+        <div *ngIf="!newreg.controls.password.valid && newreg.controls.password.dirty">
+            <p class="input-error">Password must contain a number, a capital letter, a small letter, a symbol and must be at least 8 character length</p>
+          </div>
+
+        <ion-item>
+            <ion-input type="password" formControlName="confirmPassword" placeholder="Confirm Password"></ion-input>
+          </ion-item>
+
+          <div *ngIf="(newreg.controls.password.valid) && (newreg.controls.confirmPassword.value != newreg.controls.password.value && newreg.controls.confirmPassword.dirty)">
+              <p class="input-error">Password did not match</p>
+            </div>
+            <div *ngIf="(!newreg.controls.password.valid) && (!newreg.controls.confirmPassword.valid && newreg.controls.confirmPassword.dirty)">
+              <p class="input-error">Password must contain a number, a capital letter, a small letter, a symbol and must be at least 8 character length</p>
+            </div>
+
+          <ion-item>
+              <ion-input type="text" formControlName="secretQuestion" placeholder="Secret Question"></ion-input>
+            </ion-item>
+
+            <div *ngIf="!newreg.controls.secretQuestion.valid && newreg.controls.secretQuestion.dirty">
+                <p class="input-error">Field is mandatory</p>
+              </div>
+
+            <ion-item>
+                <ion-input type="text" formControlName="secretAnswer" placeholder="Secret Answer"></ion-input>
+              </ion-item>
+
+              <div *ngIf="!newreg.controls.secretAnswer.valid && newreg.controls.secretAnswer.dirty">
+                  <p class="input-error">Answer the secret question above</p>
+                </div>
+
+              <ion-item>
+                  <ion-input type="text" formControlName="secretQuestionHint" placeholder="Hint"></ion-input>
+                </ion-item>
+
+                <div *ngIf="!newreg.controls.secretQuestionHint.valid && newreg.controls.secretQuestionHint.dirty">
+                    <p class="input-error">Field is compulsory and must be maximum of 10 character length</p>
+                  </div>
+      </div>
+
+      <div align="center" class="submit_button">
+      <button ion-button type="submit" [disabled]="!isReadyToProceed">Submit</button>
+    </div>
+
+  </form>
+</ion-content>

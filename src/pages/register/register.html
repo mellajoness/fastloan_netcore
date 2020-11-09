@@ -1,0 +1,89 @@
+<ion-header no-border>
+
+  <ion-navbar transparent>
+    <ion-title>Create Account</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="app_bg" style="height: 100%">
+  <form *ngIf="form" [formGroup]="form" (submit)="doRegister()">
+    <div align="center" id="firstForm" style="margin-top:50px">
+      <p class="form-subtitle">Personal Details</p>
+      <ion-item>
+        <ion-input type="text" formControlName="firstName" name="firstName" placeholder="First Name"></ion-input>
+      </ion-item>
+      <div *ngIf="!form.controls.firstName.valid && form.controls.firstName.dirty">
+        <p class="input-error">Kindly put a valid name</p>
+      </div>
+      <ion-item>
+        <ion-input type="text" formControlName="lastName" name="lastName" placeholder="Last Name"></ion-input>
+      </ion-item>
+      <div *ngIf="!form.controls.lastName.valid && form.controls.lastName.dirty">
+        <p class="input-error">Kindly put a valid name</p>
+      </div>
+      <ion-item>
+        <ion-input type="email" formControlName="email" name="email" placeholder="Email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="tel" formControlName="otp" name="otp" placeholder="OTP"></ion-input>
+      </ion-item>
+      <ion-grid>
+  <ion-row>
+    <ion-col>
+    </ion-col>
+    <ion-col>
+      <button type="button" ion-button (click)="gotoNext()" [disabled]="!form.controls.firstName.valid || !form.controls.lastName.valid || !form.controls.email.valid || !form.controls.otp.valid" style="border: 1px solid #FFFFFF;box-sizing: border-box;border-radius: 2px;margin-left:25px;background-color: transparent !important">Next</button>
+    </ion-col>
+  </ion-row>
+      </ion-grid>
+      <!--<div align="center" style="margin-top:30px">
+          <button type="button" ion-button (click)="gotoNext()" [disabled]="!form.controls.firstName.valid || !form.controls.lastName.valid || !form.controls.email.valid" style="width: 285px;height: 50px;border: 1px solid #FFFFFF;box-sizing: border-box;border-radius: 2px;background-color: transparent !important">Next</button>
+      </div>-->
+    </div>
+    <div align="center" id="secondForm" style="margin-top:20px;display:none">
+      <p class="form-subtitle">Security Details</p>
+      <ion-item>
+        <ion-input type="text" formControlName="secretQuestion" name="secretQuestion" placeholder="Secret Question"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="text" formControlName="secretAnswer" name="secretAnswer" placeholder="Secret Answer"></ion-input>
+      </ion-item>
+      <!-- <ion-item>
+        <ion-input type="text" formControlName="hint" name="hint" placeholder="Hint"></ion-input>
+      </ion-item> -->
+      <ion-item>
+        <ion-input type="password" formControlName="password" name="password" placeholder="Password"></ion-input>
+      </ion-item>
+      <div *ngIf="!form.controls.password.valid && form.controls.password.dirty">
+        <p class="input-error">Password must contain a number, a capital letter, a small letter, a symbol and must be at least 8 character length</p>
+      </div>
+      <ion-item>
+        <ion-input type="password" formControlName="confirmPassword" name="confirmPassword" placeholder="Confirm Password"></ion-input>
+      </ion-item>
+      <div *ngIf="(form.controls.password.valid) && (form.controls.confirmPassword.value != form.controls.password.value && form.controls.confirmPassword.dirty)">
+        <p class="input-error">Password did not match</p>
+      </div>
+      <div *ngIf="(!form.controls.password.valid) && (!form.controls.confirmPassword.valid && form.controls.confirmPassword.dirty)">
+        <p class="input-error">Password must contain a number, a capital letter, a small letter, a symbol and must be at least 8 character length</p>
+      </div>
+            <ion-grid>
+  <ion-row>
+    <ion-col>
+      <button type="button" (click)="gotoPrevious()" ion-button style="border: 1px solid #FFFFFF;box-sizing: border-box;border-radius: 2px;background-color: transparent !important">Previous</button>
+    </ion-col>
+    <ion-col>
+      <button ion-button [disabled]="!isReadyToProceed" style="border: 1px solid #FFFFFF;margin-left:15px;box-sizing: border-box;border-radius: 2px;background-color: transparent !important">Submit</button>
+    </ion-col>
+  </ion-row>
+      </ion-grid>
+      <!--<div align="center" style="margin-top:30px">
+          <button ion-button [disabled]="!isReadyToProceed" style="width: 285px;height: 50px;border: 1px solid #FFFFFF;box-sizing: border-box;border-radius: 2px;background-color: transparent !important">Create Account</button>
+      </div>-->
+    </div>
+    <div align="center">
+        <p style="height: 16px;font-style: normal;font-weight: normal;line-height: normal;font-size: 13px;text-align: center;color: #E5E5E5;">Already have an account? <a (click)="gotoLogin()">Sign in</a></p>
+    </div>
+  </form>
+</ion-content>

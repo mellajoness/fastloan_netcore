@@ -1,0 +1,27 @@
+<!--
+Created by Akobundu Michael (P7543)
+-->
+<ion-header no-border>
+
+  <ion-navbar transparent>
+    <ion-title></ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="app_bg">
+    <p class="page-title">Pay Loan</p>
+    <p class="sub-title">Choose a convenient channel to pay your loan</p>
+    <div align="center" class="buttons-wrapper">
+        <button (click)="paywithcard()" ion-button class="button-design">Pay with card</button>
+        <button (click)="paywithBankTransfer()" ion-button class="button-design">Pay with a Fidelity Bank Account</button>
+        <button (click)="paywithatm()" ion-button class="button-design">Pay with ATM</button>
+        <button (click)="paywithtransfer()" ion-button class="button-design">Pay at a Bank Branch</button>
+        <!--<button (click)="paywithtransfer()" ion-button class="button-design">Pay by Bank Transfer</button>-->
+    </div>
+</ion-content>
+

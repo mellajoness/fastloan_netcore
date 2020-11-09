@@ -1,0 +1,71 @@
+<!--
+  Created by Akobundu Michael (bundle 4 the girls ...:))
+-->
+<ion-header>
+
+  <ion-navbar color="fidelityBlue">
+    <ion-title>Card Registration</ion-title>
+      <ion-buttons start>
+        <button ion-button (click)="cancel()">
+          <span color="primary" showWhen="ios" style="color: #fff">
+            Cancel
+          </span>
+          <ion-icon name="md-close" showWhen="android,windows"></ion-icon>
+        </button>
+      </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="app-content">
+  <form *ngIf="form" [formGroup]="form" (submit)="doSubmit()">
+    <ion-card class="card-card">
+      <ion-card-content class="card-content">
+        <ion-list>
+          <p class="account-item">Enter your card Number</p>
+          <ion-item class="card-data">
+            <ion-input formControlName="cardNumber" name="cardNumber" type="tel" placeholder="Card Number"></ion-input>
+          </ion-item>
+        </ion-list>
+        <ion-list>
+          <p class="account-item">Expiration Date</p>
+          <ion-grid style="margin-left:5px" class="card-data">
+            <ion-row>
+              <ion-col>
+                <ion-item class="card-data">
+                  <ion-input formControlName="cardYear" name="cardYear" type="tel" placeholder="YY"></ion-input>
+                </ion-item>
+              </ion-col>
+              <ion-col>
+                <ion-item class="card-data">
+                  <ion-input formControlName="cardMonth" name="cardMonth" type="tel" placeholder="MM"></ion-input>
+                </ion-item>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-list>
+        <ion-list>
+          <p class="account-item">Pin & CVV</p>
+          <ion-grid style="margin-left:5px" class="card-data">
+            <ion-row>
+              <ion-col>
+                <ion-item class="card-data">
+                  <ion-input formControlName="cardPin" name="cardPin" type="password" placeholder="Card Pin"></ion-input>
+                </ion-item>
+              </ion-col>
+              <ion-col>
+                <ion-item class="card-data">
+                  <ion-input formControlName="cvv" name="cvv" type="tel" placeholder="CVV"></ion-input>
+                </ion-item>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-list>
+        <div align="center" style="margin-top:50px">
+          <button ion-button color="fidelityGreen" [disabled]="!isReadyToProceed" class="custom-button" round>Proceed</button>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </form>
+</ion-content>

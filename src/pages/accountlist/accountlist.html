@@ -1,0 +1,59 @@
+<!--
+  Created by Akobundu Michael (P7543)
+-->
+<ion-header style="background-image: linear-gradient(#247BA0 0%, #0A2463);">
+
+  <ion-navbar transparent>
+    <ion-title style="color:#ffffff">Accounts</ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="cancel()">
+        <span color="primary" showWhen="ios" style="color: #fff">
+          Cancel
+        </span>
+        <ion-icon style="font-size:25px" name="md-close" showWhen="android,windows"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+  <ion-toolbar transparent>
+    <!--<div align="center">-->
+      <p class="request-level">50% Complete</p>
+      <img src="../../assets/img/progress2.png"/>
+      <ion-grid style="color:#ffffff;font-size:11px">
+        <ion-row>
+            <ion-col>
+                Loan Offers
+            </ion-col>
+            <ion-col>
+                Select bank
+            </ion-col>
+            <ion-col>
+                Payment Card
+            </ion-col>
+            <ion-col>
+            condirm Loan
+            </ion-col>
+        </ion-row>
+      </ion-grid>
+    <!--</div>-->
+
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content padding style="height:100%">
+        <p class="sub-title">Please select account</p>
+            <div style="top:241px;height:80px">
+                <ion-item *ngFor="let bankaccount of bankAccounts" class="account-details-wrapper" (click)="accountSelected(bankaccount)">
+                    <p style="color:#3D5789;font-weight:bold">{{ bankaccount.bankName }}</p>
+                    <p style="color:#3D5789;margin-top:10px">{{ bankaccount.censoredAccountNo }}</p>
+                    <button ion-button clear item-end>
+                    <ion-icon style="font-size:30px;color:gray" name="ios-arrow-forward"></ion-icon>
+                    </button>
+                </ion-item>
+            </div>
+            <div align="center" style="position: absolute;min-height:100px; left: 0; bottom: 0; right: 0;">
+                <p style="color:#3D5789" (click)="gotoAddAccount('addaccount')">I think i'll use a new account </p>
+            </div>
+</ion-content>
+

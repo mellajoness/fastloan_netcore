@@ -1,0 +1,58 @@
+<!--
+  Created by Akobundu Michael (P7543)
+-->
+<ion-header style="background-image: linear-gradient(#247BA0 0%, #0A2463);">
+
+  <ion-navbar transparent>
+    <ion-title style="color:#ffffff">{{ 'REQUESTLOAN_TITLE' | translate }}</ion-title>
+    <ion-buttons end>
+        <button ion-button icon-only (click)="getbankaccounts()">
+        <ion-icon name="refresh"></ion-icon>
+        </button>
+    </ion-buttons>
+  </ion-navbar>
+  <ion-toolbar transparent>
+    <!--<div align="center">-->
+      <p class="request-level">50% Complete</p>
+      <img src="../../assets/img/progress2.png"/>
+      <ion-grid style="color:#ffffff;font-size:11px">
+        <ion-row>
+            <ion-col>
+                Loan Offers
+            </ion-col>
+            <ion-col>
+                Select Bank
+            </ion-col>
+            <ion-col>
+                Payment Card
+            </ion-col>
+            <ion-col>
+            Confirm Loan
+            </ion-col>
+        </ion-row>
+      </ion-grid>
+    <!--</div>-->
+
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content padding style="height:100%">
+        <ion-refresher (ionRefresh)="doRefresh($event)">
+            <ion-refresher-content></ion-refresher-content>
+        </ion-refresher>
+        <p class="sub-title">Please select an account</p>
+            <div style="margin-top:20px;">
+                <ion-item *ngFor="let bankaccount of bankaccounts" class="account-details-wrapper" (click)="selectAccount(bankaccount)">
+                    <p style="color:#3D5789;font-weight:bold">{{ bankaccount.bankName }}</p>
+                    <p style="color:#3D5789;margin-top:10px">{{ bankaccount.censoredAccountNo }}</p>
+                    <button ion-button clear item-end>
+                    <ion-icon style="font-size:30px;color:gray" name="ios-arrow-forward"></ion-icon>
+                    </button>
+                </ion-item>
+            </div>
+            <div align="center" style="margin-top:10px">
+                <p style="color:#3D5789" (click)="showAddaccountownModal()">I think i'll use a new account </p>
+            </div>
+</ion-content>

@@ -1,0 +1,35 @@
+page-rejectloan {
+    .reject-card {
+        margin-top: 50px;
+        border-radius: 5px;
+    }
+
+    .recommend-card {
+        margin-top:15px;
+        background: transparent !important;//rgba(239, 243, 247, 0.79);
+        border: 1px solid #ffffff;
+        box-sizing: border-box;
+        border-radius: 1px;
+    }
+
+    .label-wrapper {
+        margin-left: 55px;
+        color:#ffffff;
+    }
+
+    .sub-title {
+        height: 16px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 15px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 60px;
+    }
+
+    .no-reason {
+        color: #FFFFFF
+    }
+
+}

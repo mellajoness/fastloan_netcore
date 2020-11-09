@@ -1,0 +1,36 @@
+
+<ion-header style="background-image: linear-gradient(#247BA0 0%, #0A2463);">
+
+  <ion-navbar transparent>
+    <ion-title>Pay Loan</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+            <div>
+              <span style="text-align:center">You are to pay  &#8358;{{ balance }}</span>
+            </div>
+            <div class="second">
+              <span style="text-align:center; white-space: normal;">Kindly note that your loan balance will be updated few minutes after you have made payment.</span>
+            </div>
+            <div style="margin-top:20px">
+                  <ion-item>
+                      <ion-label>Account</ion-label>
+                      <ion-select [(ngModel)]="selectedAccount">
+                          <ion-option value="{{accounts.accountNumber}}">{{accounts.accountNumber}}</ion-option>
+                      </ion-select>
+                  </ion-item>
+                <ion-item no-lines>
+                    <ion-input type="number" [(ngModel)]="amountEntered" placeholder="Amount"></ion-input>
+                </ion-item>
+                <ion-item *ngIf="sent" no-lines>
+                    <ion-input type="text" [(ngModel)]="otp" name="otp" placeholder="OTP"></ion-input>
+                </ion-item>
+
+            </div>
+            <div class="but">
+              <button (click)="sent ? pay() : validate() " ion-button class="pay-button">{{ sent ? 'Pay' : 'Validate' }}</button>
+          </div>
+</ion-content>

@@ -1,0 +1,66 @@
+page-dashboard {
+
+
+    .first-success-div {
+        margin-top: 10px;
+    }
+
+    ion-spinner {
+    * {
+      stroke:#ffffff;
+    }
+
+    &.spinner-circles circle,
+    &.spinner-bubbles circle,
+    &.spinner-dots circle {
+      fill: #ffffff;
+    }
+  }
+
+  .loan-details-button {
+    font-size:11px;
+    width: 175px;
+    height: 29px;
+    border: 1px solid #FFFFFF;
+    line-height:normal;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    background-color: transparent !important
+  }
+
+  .loan-balance {
+    font-size:30px;
+    color:#ffffff
+  }
+
+  .loan-balance-writeup {
+    font-size:18px;
+    color:#ffffff;
+    line-height:normal
+  }
+
+  ion-col ion-item {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto !important;
+    height: 46px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 5px rgba(10, 36, 99, 0.4);
+    border-radius: 5px;
+    span{
+       text-align: center;
+       white-space: normal;
+       margin: 0 auto !important;
+       font-size: 11px;
+       color:#0A2463
+    }
+    img{
+      height: 15px;
+      width: 15px;
+      margin: 0 auto !important;
+    }
+  }
+
+}

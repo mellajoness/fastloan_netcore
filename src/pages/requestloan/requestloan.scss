@@ -1,0 +1,43 @@
+page-requestloan {
+    .amount-display {
+        font-size: 28px;
+        font-weight: bold;
+        color: #247BA0;
+    }
+
+    .loan-card {
+        margin-top:5px;
+        background: rgba(239, 243, 247, 0.79);
+        border: 1px solid #247BA0;
+        box-sizing: border-box;
+        border-radius: 1px;
+    }
+
+    .sub-title {
+        text-align:center;
+        height: 34px;
+        top: 189px;
+        font-size: 13px;
+        color:#0A2463;
+    }
+
+    .icon-decorator {
+        font-size:30px;
+        color:#0A2463;
+    }
+
+    .box-wrapper {
+        top:241px;
+        height:80px;
+    }
+
+    .message {
+        font-size: 20px;
+        margin-top: 200px;
+    }
+
+    .follow-up {
+        margin-top: 10px;
+    }
+
+}

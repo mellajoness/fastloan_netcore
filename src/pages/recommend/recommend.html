@@ -1,0 +1,35 @@
+<!--
+  Created by Akobundu Michael (P7543)
+-->
+<ion-header style="background-image: linear-gradient(#247BA0 0%, #0A2463);">
+
+  <ion-navbar transparent>
+    <ion-title>Recommend a Friend</ion-title>
+    <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+      <div padding>
+        <p style="color:#3D5789">Recommend FastLoan to your friends and family via social media.</p>
+        <p style="color:#3D5789">You can recommend it to as many people as you like to share your awesome experience</p>
+        <div padding align="center" style="position: absolute;top:178px; left: 0; bottom: 0; right: 0;">
+        <ion-list padding>
+            <ion-item class="recommend-card" (click)="shareOnTwitter()">
+                <span><img src="../../assets/img/twitter.png" width="20" height="20"/></span> <span class="label-wrapper"> Share on Twitter</span>
+            </ion-item>
+            <ion-item class="recommend-card" (click)="shareOnFacebook()">
+                <span><img src="../../assets/img/facebook.png" width="15" height="20"/></span> <span class="label-wrapper"> Share on Facebook</span>
+            </ion-item>
+            <ion-item class="recommend-card" (click)="shareOnInstagram()">
+                <span><img src="../../assets/img/instagram.png" width="20" height="20"/></span> <span class="label-wrapper"> Share on Instagram</span>
+            </ion-item>
+        </ion-list>
+    </div>
+    </div>
+</ion-content>
+

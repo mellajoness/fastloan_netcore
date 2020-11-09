@@ -1,0 +1,119 @@
+{
+  "BACK_BUTTON_TEXT": "Back",
+
+  "NAME": "Name",
+  "EMAIL": "Email",
+  "USERNAME": "Username",
+  "PASSWORD": "Password",
+  "LOGIN": "Sign in",
+  "SIGNUP": "Sign up",
+
+  "TAB1_TITLE": "Items",
+  "TAB2_TITLE": "Search",
+  "TAB3_TITLE": "Settings",
+
+  "MAP_TITLE": "Map",
+
+  "TUTORIAL_SKIP_BUTTON": "Skip",
+  "TUTORIAL_CONTINUE_BUTTON": "Continue",
+
+  "TUTORIAL_SLIDE1_TITLE": "Welcome to the Ionic Super Starter",
+  "TUTORIAL_SLIDE1_DESCRIPTION": "The <b>Ionic Super Starter</b> is a fully-featured Ionic starter with many pre-built pages and best practices.",
+
+  "TUTORIAL_SLIDE2_TITLE": "How to use the Super Starter",
+  "TUTORIAL_SLIDE2_DESCRIPTION": "Assemble the various page types you want and remove the ones you don't. We've provided many common mobile app page layouts, like login and signup pages, tabs, and this tutorial page.",
+
+  "TUTORIAL_SLIDE3_TITLE": "Getting Started",
+  "TUTORIAL_SLIDE3_DESCRIPTION": "Need help? Check out the Super Starter README for a full tutorial",
+
+  "TUTORIAL_SLIDE4_TITLE": "Ready to Play?",
+
+  "WELCOME_INTRO": "The starting point for your next great Ionic app",
+
+  "SETTINGS_TITLE": "Settings",
+  "SETTINGS_OPTION1": "Option 1",
+  "SETTINGS_OPTION2": "Option 2",
+  "SETTINGS_OPTION3": "Option 3",
+  "SETTINGS_OPTION4": "Option 4",
+
+  "SETTINGS_PROFILE_BUTTON": "Edit Profile",
+
+  "SETTINGS_PAGE_PROFILE": "Edit Profile",
+
+  "WELCOME_TITLE": "Welcome",
+
+  "LOGIN_TITLE": "Sign in",
+  "LOGIN_ERROR": "Unable to sign in. Please check your account information and try again.",
+  "EXIT_ADVISE": "Are you sure you want to exit ?",
+  "PROCEED_BUTTON": "Proceed",
+  "CONFIRM_TITLE": "Confirm Loan",
+  "CONFIRM_INTEREST": "Loan Interest",
+  "CONFIRM_BANKNAME": "Bank Name",
+  "CONFIRM_ACCOUNTNO": "Account No",
+  "CONFIRM_AMOUNT": "Loan Amount",
+  "CONFIRM_TERMS": "Loan Term",
+  "CONFIRM_SUBTITLE": "Your loan offering is",
+  "CONFIRM_MESSAGE": "Confirm if you have read and agree to the",
+  "CONFIRM_TANDC": "terms and conditions",
+  "CONFIRM_CONFIRM": "Confirm",
+  "CONFIRM_REJECT": "Reject",
+  "NOLOAN_OFFER_FOLLOWUP_MESSAGE": "Please contact trueserve@fidelitybank.ng or call 014485252 for more information",
+  "SIGNIN_PLACEHOLDER": "Enter your phone number",
+  "SIGNIN_TITLE": "Welcome to FastLoan",
+  "VALIDATION_TITLE": "Enter the verification Code",
+  "VALIDATION_MSG": "We have sent it to",
+  "VALIDATION_ADVISE": "If you did not receive OTP, Please text \"allow\" to 2442",
+  "START_BUTTON": "Sign in",
+  "ADDACCOUNT_TITLE": "Add New Account",
+  "SLIDES_TITLE": "FastLoan",
+  "SLIDE1_SMALLTEXT": "No paperwork, no collateral required!",
+  "REQUESTLOAN_TITLE": "Request for a loan",
+  "REQUESTLOAN_SUBTITLE": "All loan offers",
+  "SIGNUP_TITLE": "Sign up",
+  "DECLINE_BUTTON": "Decline",
+  "SELECTLOAN_TITLE": "Select Account",
+  "SELECTLOAN_SUBTITLE": "Please select a bank account to use",
+  "SELECTACCOUNT_ALT": "Select account",
+  "DASHBOARD_TITLE": "Menu",
+  "DASHBOARD_SUBTITLE": "Welcome",
+  "DASHBOARD_REQUESTLOAN": "Request for Loan",
+  "DASHBOARD_PAYLOAN": "Pay Loan",
+  "DASHBOARD_CHECKBALANCE": "Check Balance",
+  "DASHBOARD_EXTENDLOAN": "Extend Loan",
+  "DASHBOARD_TERMS": "Terms",
+  "DASHBOARD_EXIT": "Exit",
+  "DASHBOARD_HISTORY": "History",
+  "REJECT_EXITBUTTON": "Exit",
+  "REJECT_REASON": "Reason",
+  "REJECT_SUBMITBUTTON": "Submit",
+  "REJECT_EMAILPLACEHOLDER": "Enter your email address",
+  "REJECT_MESSAGE": "Thank you for using FastLoan. We would like to send you a brochure of our other loan products that may meet your needs. Please provide your email address below",
+  "FIDELITY_ACCOUNT": "Fidelity bank account",
+  "OTHERBANK_ACCOUNT": "Other bank account",
+  "EXTENDLOAN_TITLE": "Extend Loan",
+  "EXTENDLOAN_SUBTITLE": "New amount to pay",
+  "LOANHISTORY_TITLE": "Loan History",
+  "ACCOUNTADDED_MSG":"Account added successfully, click on select account to select a preferred account",
+  "NOACCOUNT_MSG": "You currently do not have any account number on file with us and we require one in order to disburse your loan.Please add a new account number to proceed.",
+  "SIGNUP_ERROR": "Unable to create account. Please check your account information and try again.",
+  "SIGNUP_BUTTON": "Sign up",
+
+  "LIST_MASTER_TITLE": "Items",
+
+  "ITEM_CREATE_TITLE": "New Item",
+  "ITEM_CREATE_CHOOSE_IMAGE": "Add Image",
+
+  "ITEM_NAME_PLACEHOLDER": "Name",
+  "ITEM_ABOUT_PLACEHOLDER": "About",
+
+  "DONE_BUTTON": "Done",
+  "CANCEL_BUTTON": "Cancel",
+  "DELETE_BUTTON": "Delete",
+
+  "CARDS_TITLE": "Social",
+
+  "ABOUT_APP": "This will help you borrow money",
+
+  "SEARCH_TITLE": "Search",
+  "SEARCH_PLACEHOLDER": "Search the items list, e.g. \"Donald Duck\""
+}

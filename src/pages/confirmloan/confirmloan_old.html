@@ -1,0 +1,62 @@
+<!--
+  Created by Akobundu Michael (P7543)
+-->
+<ion-header>
+
+  <ion-navbar color="fidelityBlue">
+    <ion-title>{{ 'CONFIRM_TITLE' | translate }}</ion-title>
+  </ion-navbar>
+ 
+</ion-header>
+
+
+<ion-content class="app-content" style="background:url('../../assets/img/confirm_bg.jpg') no-repeat;background-size: cover;">
+    <div align="center" style="color:#78B844">
+      <p>{{ 'CONFIRM_SUBTITLE' | translate }}</p>
+    </div>
+    <div align="center" style="color:#fff">
+      <h1 class="big-amount">&#8358;{{principal}}</h1>
+    </div>
+    <div align="center" style="color:#fff">
+      <p>{{ 'CONFIRM_INTEREST' | translate }} {{request.fee}}%</p>
+    </div>
+  <div padding style="margin-top:-15px;z-index:2000000px;">
+   <ion-card class="card-confirm">
+    <ion-card-content>
+      <div class="loan-info">
+        <span class="label">{{ 'CONFIRM_BANKNAME' | translate }}</span> <span style="float: right">{{request.bankName}}</span>
+      </div>
+      <div class="loan-info">
+        <span class="label">{{ 'CONFIRM_ACCOUNTNO' | translate }}</span> <span style="float: right">{{request.censoredAccountNo}}</span>
+      </div>
+      <div class="loan-info">
+        <span class="label">{{ 'CONFIRM_AMOUNT' | translate }}</span> <span style="float: right">&#8358;{{principal}}</span>
+      </div>
+      <div class="loan-info">
+        <span class="label">{{ 'CONFIRM_TERMS' | translate }} </span> <span style="float: right">{{request.term}} Days</span>
+      </div>
+      <div class="loan-info">
+        <span class="label">{{ 'CONFIRM_INTEREST' | translate }} </span> <span style="float: right">{{request.fee}}%</span>
+      </div>
+    </ion-card-content>
+  </ion-card> 
+  <ion-card class="card-confirm">
+    <ion-card-content>
+      <p>You will owe <span class="info">&#8358;{{loanwithinterest}}</span> (loan + interest) due on <span class="info">{{expirydate}}</span></p><br/>
+      <p>{{ 'CONFIRM_MESSAGE' | translate }} <a class="info" (click)="gotoTerms()">{{ 'CONFIRM_TANDC' | translate }}</a></p>
+      <div align="center">
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <button ion-button color="fidelityGreen" (click)="confirm()" class="decision-button" round>{{ 'CONFIRM_CONFIRM' | translate }}</button>
+            </ion-col>
+            <ion-col>
+              <button ion-button color="fidelityGreen" (click)="reject()" class="decision-button" round>{{ 'CONFIRM_REJECT' | translate }}</button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+    </ion-card-content>
+  </ion-card> 
+</div>
+</ion-content>

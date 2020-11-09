@@ -1,0 +1,26 @@
+page-loanbalance {
+     .noloan {
+        font-size: 25px;
+        margin-top: 230px;
+        color:#fff;
+    }
+
+    .success-cover {
+        background:url('../../assets/img/confirm_bg.jpg') no-repeat;
+        background-size: cover;
+    }
+
+    .due-loan {
+        color: #ff0000;
+    }
+
+    .not-due {
+        color: #E5E5E5;
+    }
+
+        .loan-info {
+        margin-top: 15px;
+        color:#fff
+    }
+
+}

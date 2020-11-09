@@ -1,0 +1,29 @@
+page-addcard {
+    .card-content {
+        margin-top:65px;
+        font-size:18px;
+        text-align: center;
+    }
+
+    .paymentcard-button {
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .card-warning {
+        border-radius: 5px;
+        padding-bottom: 30px;
+    }
+
+    .card-design {
+        margin-top:5px;
+        background: rgba(239, 243, 247, 0.79);
+        border: 1px solid #247BA0;
+        box-sizing: border-box;
+        border-radius: 1px;
+          display: flex;
+          justify-content: space-between
+    }
+}

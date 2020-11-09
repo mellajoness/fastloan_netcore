@@ -1,0 +1,31 @@
+<!--<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ 'LOGIN_TITLE' | translate }}</ion-title>
+  </ion-navbar>
+
+</ion-header>-->
+
+
+<ion-content class="login_bg">
+  <h2 padding class="title">{{ 'SIGNIN_TITLE' | translate }}</h2>
+  <form *ngIf="form" [formGroup]="form" (submit)="doContinue()">
+    <ion-list padding center class="login_list">
+      <div align="center">
+      <ion-item class="login_input">
+            <ion-input type="tel" formControlName="phoneNumber" name="phoneNumber" placeholder="{{ 'SIGNIN_PLACEHOLDER' | translate }}"></ion-input>
+      </ion-item>
+      <ion-item class="biometric" *ngIf="hasFingerPrint">
+        <ion-label class="biometric-label">Enable Biometric</ion-label>
+        <ion-toggle formControlName="isFingerPrint" [disabled]="!isReadyToProceed" name="isFingerPrint" (ionChange)="FingerPrintAuth()" checked="false"></ion-toggle>
+      </ion-item>
+      </div>
+
+      <div padding align="center" class="proceed_btn">
+        <button ion-button color="fidelityGreen" [disabled]="!isReadyToProceed" class="custom-button" round>{{ 'PROCEED_BUTTON' | translate }}</button>
+      </div>
+
+    </ion-list>
+  </form>
+
+</ion-content>

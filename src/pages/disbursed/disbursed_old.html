@@ -1,0 +1,38 @@
+<!--
+  Generated template for the DisbursedPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar hideBackButton color="fidelityBlue">
+    <ion-title>Loan Disbursed</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="gotodashboard()">
+        Exit
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="app-content">
+  <p><img src="../assets/img/logo.png" with="30" height="30" class="logo"/></p>
+  <ion-card class="disbursed-card">
+    <ion-card-content>
+      <div align="center" class="first-success-div">
+          <ion-icon color="fidelityGreenLabel" class="success-check" name="checkmark-circle"></ion-icon>
+      </div>
+      <p class="message">Congratulations, your loan has been disbursed. </p>
+    </ion-card-content>
+  </ion-card>
+    <div align="center" style="margin-top:90px">
+      <button ion-button color="fidelityGreen" (click)="gotodashboard()" class="custom-button" round>Exit</button>
+    </div>  
+    <!--<div align="center">
+      <button ion-button color="fidelityGreen" (click)="ihaveAccount()" class="custom-button" round>I have an Account</button>
+    </div>-->
+
+</ion-content>

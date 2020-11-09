@@ -1,0 +1,52 @@
+page-validate {
+
+    .vallidate_buttons {
+        font-size:30px;
+        background-color: transparent !important;
+        margin:5px;
+        padding:5px;
+        border-radius:50%;
+        color:#E5E5E5;//#0E237E;
+    }
+
+    .delete_button {
+        background-color: transparent !important;
+        margin-right:50px;
+        margin-top: 5px;
+        padding:5px;
+        color: #0E237E;
+    }
+
+    .pin {
+        padding-bottom: 20px;
+        margin-top:-10px;
+    }
+
+    /*.pin-display {
+        border-bottom:1px solid #0E237E;
+        color: #0E237E;//black;
+        font-weight:bolder;
+        font-size:28px;
+        height:30px;
+        margin-left:30px;
+    }*/
+
+    .pin-display {
+        border-bottom:1px solid #E5E5E5;
+        color: #E5E5E5;//black;
+        font-weight:bolder;
+        font-size:28px;
+        height:30px;
+        margin-left:30px;
+    }
+
+    .verification_title {
+        text-align: center;
+    }
+
+    .validate-body {
+        color: #E5E5E5;//#0E237E;
+    }
+    
+
+}

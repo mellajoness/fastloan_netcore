@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "367649051305",
+    "firebase_url": "https://fastloan-a1d2b.firebaseio.com",
+    "project_id": "fastloan-a1d2b",
+    "storage_bucket": "fastloan-a1d2b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:367649051305:android:ac8da8b487f93dda",
+        "android_client_info": {
+          "package_name": "io.fidelity.fidelityfastloan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "367649051305-rnh2g6n9mom4e7qe9omagcg0j39qqa04.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGMr4BmWK5V8sAZbN2zFRhrS-4wjDS8tg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "367649051305-rnh2g6n9mom4e7qe9omagcg0j39qqa04.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

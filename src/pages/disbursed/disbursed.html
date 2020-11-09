@@ -1,0 +1,35 @@
+<!--
+Created by Akobundu Michael (P7543)
+-->
+<ion-header no-border>
+
+  <ion-navbar hideBackButton transparent>
+    <ion-title class="app-title">100% Complete</ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="gotodashboard()">
+        Exit
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content style="background-image: linear-gradient(#247BA0 0%, #0A2463); height: 100%">
+    <div align="center" style="position: absolute;top: 70px; left: 0; bottom: 0; right: 0;">
+        <img src="../../assets/img/ok.png" width="60" height="60"/>
+    </div>
+    <div align="center" style="position: absolute;top: 150px; left: 0; bottom: 0; right: 0;font-size:18px;color:#ffffff">
+        <p>Congratulations!</p>
+        <p>Your loan has been disbursed.</p>
+    </div>
+    <div align="center" style="position: absolute;top: 279px; left: 0; bottom: 0; right: 0;color:#ffffff">
+        <p>Your Loan balance is</p>
+        <span style="font-size:30px" >&#8358;{{details.loanwithinterest}}</span> <span style="font-size:18px">(Loan + Interest)</span>
+        <p>{{details.expirydate}}<p>
+    </div>
+    <div align="center" style="position: absolute;top: 460px; left: 0; bottom: 0; right: 0">
+        <button (click)="gotodashboard()" ion-button style="width: 285px;height: 50px;border: 1px solid #FFFFFF;box-sizing: border-box;border-radius: 2px;background-color: transparent !important">Got it</button>
+    </div>
+
+</ion-content>

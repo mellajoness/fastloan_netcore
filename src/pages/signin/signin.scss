@@ -1,0 +1,41 @@
+page-signin {
+
+    .item.item-input {
+        color:#fff;
+        font-weight: bold;
+        //border-radius: 15px;
+        font-size:15px;
+        height: 56px;
+        min-width: 285px;
+        width: 285px;
+        background-color: transparent !important;
+        border-bottom: none !important;
+        margin-right: 20px;
+        //background-color: rgba(127,127,127,0.78);
+    }
+
+    .text-input::-moz-placeholder {
+        color: white;
+    }
+
+    .text-input:-ms-input-placeholder {
+        color: white;
+    }
+
+    .text-input::-webkit-input-placeholder {
+        text-indent: 0;
+        color: white;
+    }
+
+
+    .biometric {
+        background: transparent !important;
+        width: 280px;
+        margin-right:20px;
+    }
+
+    .biometric-label {
+        color:#fff;
+    }
+
+}

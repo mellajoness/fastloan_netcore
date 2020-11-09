@@ -1,0 +1,84 @@
+<!--
+Created by Akobundu Michael (P7543)
+-->
+<ion-header no-border>
+
+  <ion-navbar transparent>
+    <ion-title class="app-title">{{firstname}}</ion-title>
+      <button ion-button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+    <ion-buttons end>
+        <button ion-button icon-only (click)="presentPopover($event)">
+        <ion-icon name="more"></ion-icon>
+        </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content style="background-image: linear-gradient(#247BA0 0%, #0A2463); height: 100%">
+    <div align="center" style="margin-top:-25px">
+        <ion-spinner *ngIf="isBusy" name="bubbles"></ion-spinner>
+        <p *ngIf="!isBusy" class="loan-balance">&#8358; {{ balance | moneyTransform }}</p>
+    </div>
+    <div align="center" style="margin-top:-20px">
+        <p class="loan-balance-writeup">LOAN BALANCE</p>
+    </div>
+    <div align="center" style="margin-top:-5px" >
+        <button ion-button (click)="checkBalance()" class="loan-details-button">View Current Loan Details</button>
+    </div>
+    <div >
+        <ion-grid>
+
+             <ion-row style="margin-top:5px">
+                <ion-col>
+                    <ion-item no-lines (click)="requestLoan()">
+                        <img src="../../assets/img/loans.png"/>
+                        <span>Request for a Loan</span>
+                    </ion-item>
+                </ion-col>
+                <ion-col>
+                    <ion-item  no-lines (click)="payLoan()">
+                       <img src="../../assets/img/credit-card_new.png"/>
+                       <span>Pay Loan</span>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+            <ion-row style="margin-top:5px">
+                <ion-col>
+                    <ion-item  no-lines (click)="extendLoan()">
+                         <img src="../../assets/img/clock.png"/>
+                          <span>Extend Loan</span>
+                    </ion-item>
+                </ion-col>
+                <ion-col>
+                    <ion-item  no-lines (click)="recommendFriend()">
+                       <img src="../../assets/img/user-plus.png"/>
+                       <span>Recommend a Friend</span>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+        <p style="text-align:center; color:#ffffff;" (click)="gotoHistory()">YOUR LOAN HISTORY</p>
+        <div style="margin:10px;max-height: 180px;overflow:scroll;height: 160px;background: #FFFFFF;box-shadow: 0px 5px 5px rgba(10, 36, 99, 0.4);border-radius: 5px;">
+            <div *ngIf="!loans.length" style="margin-top:20px">
+                <p style="color:black;text-align:center;font-size:20px">{{ message }}</p>
+            </div>
+                  <ion-list *ngIf="loans.length">
+                        <ion-item *ngFor="let loan of loans">
+                        <p>Loan Amount: &#8358;{{ loan.principal | moneyTransform }}</p>
+                        <p>Expiry Date: {{ loan.expiration |  expirationTransform }}
+                        </ion-item>
+                    </ion-list>
+        </div>
+    </div>
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <p style="text-align:center" (click)="requestLoan()" *ngIf="hasHighestOffer">You are qualified for a maximum loan offer of <span style="color:#0A2463">&#8358;{{highestOffer | moneyTransform}}</span></p>
+    <p style="text-align:center" (click)="requestLoan()" *ngIf="!hasHighestOffer">{{requestMsg}}</p>
+  </ion-toolbar>
+</ion-footer>

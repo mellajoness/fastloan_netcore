@@ -1,0 +1,73 @@
+<!--
+  Created by Akobundu Michael (P7543)
+-->
+<ion-header style="background-image: linear-gradient(#247BA0 0%, #0A2463);">
+
+  <ion-navbar transparent>
+    <ion-title style="color:#ffffff">Confirm Loan</ion-title>
+  </ion-navbar>
+  <ion-toolbar transparent>
+    <!--<div align="center">-->
+      <p style="font-size:13px; text-align:center;color:#ffffff">99% Complete</p>
+      <img src="../../assets/img/progress4.png"/>
+      <ion-grid style="color:#ffffff;font-size:11px">
+        <ion-row>
+            <ion-col>
+                Loan Offers
+            </ion-col>
+            <ion-col>
+                Select Bank
+            </ion-col>
+            <ion-col>
+                Payment Card
+            </ion-col>
+            <ion-col>
+            <b>Confirm Loan</b>
+            </ion-col>
+        </ion-row>
+      </ion-grid>
+    <!--</div>-->
+
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content padding style="height:100%;max-height:100%;min-height:100%">
+    <p style="text-align:center;font-size: 13px;color:#0A2463">You loan offering is</p>
+    <p style="text-align:center;font-size: 30px;color:#0A2463;margin:0px">&#8358;{{principal}}</p>
+    <p style="text-align:center;color:#0A2463;"> {{request.fee}}%, due in {{request.term}} days</p>
+    <div padding style="margin-top:-30px">
+     <div class="loan-info">
+        <span class="label">{{ 'CONFIRM_BANKNAME' | translate }}</span> <span style="float: right">{{request.bankName}}</span>
+      </div>
+      <div class="loan-info">
+        <span class="label">{{ 'CONFIRM_ACCOUNTNO' | translate }}</span> <span style="float: right">{{request.censoredAccountNo}}</span>
+      </div>
+      <div class="loan-info">
+        <span class="label">{{ 'CONFIRM_AMOUNT' | translate }}</span> <span style="float: right">&#8358;{{principal}}</span>
+      </div>
+      <div class="loan-info">
+        <span class="label">{{ 'CONFIRM_TERMS' | translate }} </span> <span style="float: right">{{request.term}} Days</span>
+      </div>
+      <div class="loan-info">
+        <span class="label">{{ 'CONFIRM_INTEREST' | translate }} </span> <span style="float: right">{{request.fee}}%</span>
+      </div>
+    </div>
+    <p padding style="margin-top:-15px">Confirm if you have read and agreed to the <a (click)="gotoDisclaimer()" style="color:#0A2463;font-weight:bold">Disclaimer</a> and <a (click)="gotoTerms()" style="color:#0A2463;font-weight:bold">Terms and Conditions</a></p>
+        <div align="center">
+            <button (click)="confirm()" ion-button style="width: 286px;height: 50px;border: 1px solid #1D3461;box-sizing: border-box;border-radius: 1px;background:#ffffff;color:#1D3461">Get the money in the bank!</button>
+        </div>
+        <div align="center">
+             <p style="color:#0A2463" (click)="reject()" > I changed my mind</p>
+        </div>
+
+
+</ion-content>
+<!--<ion-footer>
+  <ion-toolbar>
+      <div align="center">
+      <img src="../../assets/img/stage1.png" width="100" height="15"/>
+  </div>
+  </ion-toolbar>
+</ion-footer>-->

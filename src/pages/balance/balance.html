@@ -1,0 +1,58 @@
+<!--
+Created by Akobundu Michael (P7543)
+-->
+<ion-header no-border>
+
+  <ion-navbar transparent>
+    <ion-title class="app-title"></ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="cancel()">
+        <span color="primary" showWhen="ios" style="color: #fff">
+          Cancel
+        </span>
+        <ion-icon style="font-size:25px" name="md-close" showWhen="android,windows"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding style="background-image: linear-gradient(#247BA0 0%, #0A2463); height: 100%">
+    <p style="text-align:center;color:#ffffff;margin-top:10px;font-size:25px">Loan Balance</p>
+    <div *ngIf="loans.length">
+    <p style="text-align:center;color:#ffffff;margin-top:50px">Your outstanding loan balance is</p>
+    <p style="text-align:center;color:#ffffff;font-size:30px">&#8358;{{loans[0].totalOutstanding}}</p>
+        <div style="padding:50px;margin-top:-60px">
+            <div class="loan-info">
+                <span class="label">Amount Expected</span> <span style="float: right">&#8358;{{totalexpectedPayment}}</span>
+            </div>
+            <div class="loan-info" *ngIf="loans[0].totalPaid">
+                <span class="label">Total Paid</span> <span style="float: right">&#8358;{{loans[0].totalPaid}}</span>
+            </div>
+            <div class="loan-info">
+                <span class="label">Start Date</span> <span style="float: right">{{disburseddate}}</span>
+            </div>
+            <div class="loan-info">
+                <span class="label">Due Date</span> <span style="float: right">{{duedate}}</span>
+            </div>
+            <div class="loan-info">
+                <span class="label">Loan Amount</span> <span style="float: right">&#8358;{{principal}}</span>
+            </div>
+            <div class="loan-info">
+                <span class="label">Loan Term</span> <span style="float: right">14 Days</span>
+            </div>
+            <div class="loan-info">
+                <span class="label">Loan Interest</span> <span style="float: right">&#8358;{{interest}}</span>
+            </div>
+    </div>
+    <div align="center" style="position: absolute;top: 410px; left: 0; bottom: 0; right: 0;">
+        <p style="height: 16px;font-style: normal;font-weight: normal;line-height: normal;font-size: 30px;text-align: center;" class="{{ isLoanDue ? 'due-loan' : 'not-due' }}">{{dueDateFromNow}} {{ isLoanDue ? '' : 'Left' }}</p>
+    </div>
+    </div>
+      <div *ngIf="!loans.length">
+    <div align="center">
+      <p class="noloan"> {{ message }}</p>
+    </div>
+  </div>
+</ion-content>
+

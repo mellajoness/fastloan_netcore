@@ -1,0 +1,41 @@
+<!--
+  Created by Akobundu Michael (P7543)
+-->
+<ion-header>
+
+  <ion-navbar color="fidelityBlue">
+    <ion-title>{{ 'REQUESTLOAN_TITLE' | translate }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="app-content">
+<p style="margin-left:10px" *ngIf="offers.length">{{ 'REQUESTLOAN_SUBTITLE' | translate }}</p>
+<div *ngIf="offers.length">
+  <ion-item class="loan-card" *ngFor="let offer of offers" (click)="selectLoan(offer)">
+    <h2 class="amount-display">N{{offer.principal}}</h2>
+    <p>{{offer.fee}}% interest, Due in {{offer.term}} days</p>
+    <button ion-button clear item-end>
+    <ion-icon style="font-size:30px;color:gray" name="ios-arrow-forward"></ion-icon>
+    </button>
+  </ion-item>
+</div>
+<div *ngIf="!offers.length">
+    <div align="center">
+      <p class="message">{{ message }}</p>
+      <p class="follow-up">{{ follow_up_message }}</p>
+      <p><a (click)="gotoBalance()" *ngIf="userHasLoan" >Check loan balance</a></p>
+    </div>
+</div>
+<div align="center" style="margin-top:50px">
+  <button ion-button *ngIf="offers.length" color="fidelityGreen" (click)="decline()" class="custom-button" round>{{ 'DECLINE_BUTTON' | translate }}</button>
+</div>
+</ion-content>
+<!--<ion-footer>
+  <ion-toolbar>
+      <div align="center">
+      <img src="../../assets/img/stage1.png" width="100" height="15"/>
+  </div>
+  </ion-toolbar>
+</ion-footer>-->

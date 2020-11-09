@@ -1,0 +1,38 @@
+<ion-content no-bounce>
+  <ion-slides autoplay="3000" speed="500" loop="true" pager="true" dir="{{dir}}"(ionSlideWillChange)="onSlideChangeStart($event)">
+    <ion-slide>
+        <div padding align="center" class="logo">
+            <img src="../../assets/img/slide1.png" height="20" width="20"/>
+        </div>
+        <div padding align="center" class="write-up-title">
+            <h1>Quick Payback</h1>
+        </div>
+        <div padding align="center" class="write-up">
+            <p>Payback in less than 2 minutes</p>
+        </div>
+    </ion-slide>
+    <ion-slide>
+        <div padding align="center" class="logo">
+            <img src="../../assets/img/slide2.png" height="20" width="20"/>
+        </div>
+        <div padding align="center" class="write-up-title">
+            <h1>Instant Loan</h1>
+        </div>
+        <div padding align="center" class="write-up">
+            <p>Have your money credited in your account in less than 2 minutes</p>
+        </div>
+    </ion-slide>
+    <ion-slide>
+        <div padding align="center" style="margin-top:100px">
+            <img src="../../assets/img/slide3.png" height="20" width="20"/>
+        </div>
+        <div padding align="center" >
+            <h1>Secure</h1>
+        </div>
+        <div padding align="center" >
+            <p>We provide every security measure to protect your account</p>
+        </div>
+            <button (click)="startApp()" ion-button style="width: 285px;height: 50px;border: 1px solid #134074;box-sizing: border-box;border-radius: 2px;background-color: transparent !important;color:#134074;">Get Started</button>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

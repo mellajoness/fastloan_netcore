@@ -1,0 +1,85 @@
+<!--
+Created by Akobundu Michael
+-->
+<ion-header>
+
+  <ion-navbar color="fidelityBlue">
+    <ion-title></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="validate-body">
+    <div align="center">
+      <img src="../../assets/img/bar.png" width="200" height="5"/>
+    </div>
+  <h4 class="verification_title">{{ 'VALIDATION_TITLE' | translate }}</h4>
+  <p style="text-align:center">{{ 'VALIDATION_MSG' | translate }} <b>{{ formatedNumber }}</b></p>
+  <p style="text-align:center"><a (click)="retry()">Click here</a> to resend</p>
+     <div style="margin-top: 60px; margin-right:30px">
+      <div class="row" style="text-align: center">
+        <div id="firstinput" class="col col-10 col-offset-15 pin-display">
+          <p class="pin">{{ passcode.substring(0, 1) }}</p>
+        </div>
+        <div id="secondinput" class="col col-10 col-offset-10 pin-display">
+          <p class="pin">{{ passcode.substring(1, 2) }}</p>
+        </div>
+        <div id="thirdinput" class="col col-10 col-offset-10 pin-display">
+          <p class="pin">{{ passcode.substring(2, 3) }}</p>
+        </div>
+        <div id="fourthinput" class="col col-10 col-offset-10 pin-display">
+          <p class="pin">{{ passcode.substring(3, 4) }}</p>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top: 20px;margin-left:40px">
+      <div class="row">
+        <div class="col col-25 col-offset-15">
+          <button class="round-overlay-button button button-icon vallidate_buttons" (click)="add(1)">1</button>
+        </div>
+        <div class="col col-25">
+          <button class="round-overlay-button button button-icon vallidate_buttons" (click)="add(2)">2</button>
+        </div>
+        <div class="col col-25">
+          <button class="round-overlay-button button button-icon vallidate_buttons" (click)="add(3)">3</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-25 col-offset-15">
+          <button class="round-overlay-button button button-icon vallidate_buttons" (click)="add(4)">4</button>
+        </div>
+        <div class="col col-25">
+          <button class="round-overlay-button button button-icon vallidate_buttons" (click)="add(5)">5</button>
+        </div>
+        <div class="col col-25">
+          <button class="round-overlay-button button button-icon vallidate_buttons" (click)="add(6)">6</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-25 col-offset-15">
+          <button class="round-overlay-button button button-icon vallidate_buttons" (click)="add(7)">7</button>
+        </div>
+        <div class="col col-25">
+          <button class="round-overlay-button button button-icon vallidate_buttons" (click)="add(8)">8</button>
+        </div>
+        <div class="col col-25">
+          <button class="round-overlay-button button button-icon vallidate_buttons" (click)="add(9)">9</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-25 col-offset-15">
+          <!--<button class="round-overlay-button button button-icon ion-android-delete" (click)="reset()"></button>-->
+        </div>
+        <div class="col col-25">
+          <button class="round-overlay-button button button-icon vallidate_buttons" (click)="add(0)">0</button>
+        </div>
+        <div class="col col-25">
+          <button *ngIf="passcode.length" class="round-overlay-button button button-icon delete_button" (click)="delete()"><img src="../../assets/img/delete.png"/></button>
+        </div>
+      </div>
+    </div>
+    <div align="center">
+      <p style="font-size:12px">{{ 'VALIDATION_ADVISE' | translate }}</p>
+    </div>
+</ion-content>

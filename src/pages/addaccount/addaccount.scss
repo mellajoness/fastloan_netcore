@@ -1,0 +1,65 @@
+page-addaccount {
+
+    .account-card {
+        padding-bottom: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 5px;
+    }
+
+    .account-item {
+        margin-top: 25px;
+        margin-left:15px
+    }
+
+        .account-item-last {
+        margin-top: 0px;
+        margin-left:15px
+    }
+
+
+    .card-data {
+        margin-top: 10px;
+    }
+
+    .radio-button {
+        border: 1px solid gray;
+    }
+
+    ion-select{
+        max-width: 100% !important;
+    }
+
+    .adjust-button {
+        margin-left: 15px;
+    }
+
+        .item.item-input {
+        color:#000;
+        //font-weight: bold;
+        border-radius: 15px;
+        font-size:15px;
+        //height: 56px;
+        //width: 280px;
+        border-bottom: 2px solid gray;//none !important;
+        border:1px solid gray;
+        background-color: white;
+    }
+
+    .item-md.item-block .item-inner,
+    .item-md.item-input.input-has-focus .item-inner,
+    .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus) .item-inner,
+    .item-md.item-input.ng-invalid.ng-touched:not(.input-has-focus) .item-inner,
+    .list-md .item-input.input-has-focus:last-child,
+    .list-md .item-input.ng-valid.input-has-value:not(.input-has-focus):last-child,
+    .list-md .item-input.ng-invalid.ng-touched:not(.input-has-focus):last-child {
+        border-bottom: none;
+        box-shadow: none;
+    }
+    .list-md .item-input.input-has-focus:last-child .item-inner,
+    .list-md .item-input.ng-valid.input-has-value:not(.input-has-focus):last-child .item-inner,
+    .list-md .item-input.ng-invalid.ng-touched:not(.input-has-focus):last-child .item-inner {
+        box-shadow: none; 
+    }
+
+}

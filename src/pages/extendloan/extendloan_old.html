@@ -1,0 +1,84 @@
+<!--
+  Created by Akobundu Michael (P7543) AKA Bundle
+-->
+<ion-header>
+
+  <ion-navbar color="fidelityBlue">
+    <ion-title>{{ 'EXTENDLOAN_TITLE' | translate }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+<ion-content padding class="{{ data.length ? 'success-cover' : 'app-content'}}" style="height:100%">
+  <div *ngIf="!data.length">
+      <div align="center">
+        <p class="message">{{ message }}</p>
+      </div>
+  </div>
+  <div *ngIf="data.length">
+    <div align="center" style="color:#78B844">
+      <p>{{ 'EXTENDLOAN_SUBTITLE' | translate }}</p>
+    </div>
+    <div align="center" style="color:#fff">
+      <h1 class="big-amount">&#8358;{{ data[0].newAmountDue | moneyTransform }}</h1>
+    </div>
+    <div align="center" style="color:#fff">
+      <p>{{ 'CONFIRM_INTEREST' | translate }} {{ data[0].fee}}%</p>
+    </div>
+  </div>
+  <ion-card *ngIf="data.length">
+  <ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <h2>Principal</h2>
+        </ion-col>
+        <ion-col>
+          <p>&#8358;{{ data[0].principal | moneyTransform }}</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <h2>Old amount</h2>
+        </ion-col>
+        <ion-col>
+          <p>&#8358;{{ data[0].oldAmountDue | moneyTransform }}</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <h2>Expiration</h2>
+        </ion-col>
+        <ion-col>
+          <p>{{ data[0].expiration | expirationTransform }}</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card-content>
+
+</ion-card>
+  <ion-card *ngIf="data.length">
+
+  <ion-card-content>
+    <h1 style="margin-left:15px">Payment Schedule</h1>
+    <ion-list>
+      <ion-item *ngFor="let payment of data[0].paymentSchedule">
+        <p>&#8358;{{ payment.amount | moneyTransform }}</p>
+        <p>{{ payment.dueDate | dateTransform }}</p>
+      </ion-item>  
+    </ion-list>
+    <ion-grid>
+            <ion-row >
+          <ion-col style="text-align:center">
+              <button ion-button small color="fidelityGreen" (click)="acceptExtension()" round>Accept</button>                
+          </ion-col>
+          <ion-col style="text-align:center">
+              <button ion-button small color="fidelityGreen" (click)="rejectExtension()" round>Reject</button>
+          </ion-col>
+        </ion-row>
+        </ion-grid>
+  </ion-card-content>
+</ion-card>
+</ion-content>

@@ -1,0 +1,37 @@
+<!--
+  Created by Akobundu Michael (P7543)
+-->
+<ion-header>
+
+  <ion-navbar color="fidelityBlue">
+    <ion-title></ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="cancel()">
+        <span color="primary" showWhen="ios" style="color: #fff">
+          Cancel
+        </span>
+        <ion-icon style="font-size:25px" name="md-close" showWhen="android,windows"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="app-content">
+  <div align="center" class="first-success-div">
+      <ion-icon color="fidelityGreenLabel" class="success-check" name="checkmark-circle"></ion-icon>
+  </div>
+  <div align="center">
+      <p class="status">Payment Successful</p>
+  </div>
+  <div align="center" style="margin-top:-40px">
+      <p class="amount">N50.00</p>
+  </div>
+  <div align="center" style="margin-top:-40px">
+      <p class="balance">Your loan balance is now N11,450</p>
+  </div>
+  <div align="center">
+    <button ion-button color="fidelityGreen" class="custom-button" round>Done</button>
+  </div>
+</ion-content>

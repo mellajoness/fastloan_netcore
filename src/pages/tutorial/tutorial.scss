@@ -1,0 +1,132 @@
+page-tutorial {
+  .toolbar-background {
+    background: transparent;
+    border-color: transparent;
+  }
+
+  .slide-zoom {
+    height: 100%;
+  }
+
+  .app-name {
+    margin-top: 100px;
+    color:#fff;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .start_button {
+    margin-top:500px;
+    z-index:2;
+    /*width: 100%;*/
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    bottom: 0; 
+    right: 0;
+  }
+
+  .logo {
+    margin-top:120px;
+    z-index:2;
+    /*width: 100%;*/
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    bottom: 0; 
+    right: 0;
+  }
+
+  .write-up-title {
+    z-index:2;
+    /*width: 100%;*/
+    position: absolute;
+    top: 400px; 
+    height:5px;
+    left: 0; 
+    bottom: 0; 
+    right: 0;
+  }
+
+  .write-up {
+    z-index:2;
+    /*width: 100%;*/
+    position: absolute;
+    height:5px;
+    top: 420px; 
+    left: 0; 
+    bottom: 0; 
+    right: 0;
+  }
+
+  .slide-title {
+    margin-top: 300px;
+    color:#fff;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .small-text {
+    margin-top: 15px;
+    text-align: center;
+    font-size:13px;
+    color:#fff;
+  }
+
+  .tutorial-custom-button {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .small-text-second {
+    margin-top: 0px;
+    text-align: center;
+    font-size:13px;
+    color:#fff;
+  }
+
+  .slide-background {
+    background: url('../../assets/img/screen1.png') no-repeat;
+    background-size: cover;
+  }
+
+  .slide2-background {
+    background: url('../../assets/img/screen2.jpg') no-repeat;
+    background-size: cover;
+  }
+
+  .slide-image {
+    max-height: 40%;
+    max-width: 60%;
+    margin: 36px 0;
+  }
+
+  .swiper-pagination-bullet {
+    background-color:white;
+    border: 1px solid #134074;
+    color:white;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: #134074;;
+    color: #134074;;
+  }
+
+  b {
+    font-weight: 500;
+  }
+
+  p {
+    padding: 0 40px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #60646B;
+
+    b {
+      color: #000000;
+    }
+  }
+
+}

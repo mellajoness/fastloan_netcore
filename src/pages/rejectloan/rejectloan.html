@@ -1,0 +1,33 @@
+<!--
+Created by Akobundu Michael (P7543)
+-->
+<!--<ion-header no-border>
+
+  <ion-navbar transparent>
+    <ion-title class="app-title"></ion-title>
+  </ion-navbar>
+
+</ion-header>-->
+
+
+<ion-content padding class="app_bg">
+    <p padding class="sub-title">You rejected your laon, please what could have been the problem?</p>
+    <div padding align="center" style="position: absolute;top:178px; left: 0; bottom: 0; right: 0;">
+        <ion-list padding>
+            <ion-item class="recommend-card" (click)="submit('Loan amount is too low')">
+                <span class="label-wrapper"> Loan amount is too low</span>
+            </ion-item>
+            <ion-item class="recommend-card" (click)="submit('Loan interest is too high')">
+                <span class="label-wrapper"> Loan interest is too high</span>
+            </ion-item>
+            <ion-item class="recommend-card" (click)="submit('Loan term is too high')">
+                <span class="label-wrapper"> Loan term is too high</span>
+            </ion-item>
+        </ion-list>
+    </div>
+    <div padding align="center" style="position: absolute;top:500px; left: 0; bottom: 0; right: 0;">
+        <p class="no-reason" (click)="gotodashboard()">I don't have a reason</p>
+    </div>
+
+</ion-content>
+

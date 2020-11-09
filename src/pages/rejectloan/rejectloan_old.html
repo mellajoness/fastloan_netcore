@@ -1,0 +1,46 @@
+<!--
+  Generated template for the RejectloanPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="fidelityBlue">
+    <ion-title></ion-title>
+        <ion-buttons end>
+      <button ion-button (click)="gotodashboard()">
+        {{ 'REJECT_EXITBUTTON' | translate }}
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="app-content">
+  <ion-card class="reject-card">
+
+  <ion-card-content>
+      <ion-item>
+    <ion-label>{{ 'REJECT_REASON' | translate }}</ion-label>
+    <ion-select [(ngModel)]="reason">
+      <ion-option value="Loan amount is too low">Loan amount is too low</ion-option>
+      <ion-option value="Loan interest is too high">Loan interest is too high</ion-option>
+      <ion-option value="Loan term is too short">Loan term is too short</ion-option>
+    </ion-select>
+  </ion-item>
+  <div align="center" style="margin-top:10px">
+    {{ 'REJECT_MESSAGE' | translate }} 
+  </div>
+  <ion-item style="margin-top:30px">
+    <ion-input placeholder="{{ 'REJECT_EMAILPLACEHOLDER' | translate }}" ></ion-input>
+  </ion-item>
+  <div padding align="center" style="margin-top:100px">
+      <button ion-button color="fidelityGreen" class="custom-button" (click)="submit()" round>{{ 'REJECT_SUBMITBUTTON' | translate }}</button>
+  </div>
+  </ion-card-content>
+
+</ion-card>
+
+</ion-content>

@@ -1,0 +1,28 @@
+<!--
+  Created by Akobundu Michael (P7543)
+-->
+<ion-header style="background-image: linear-gradient(#247BA0 0%, #0A2463);">
+
+  <ion-navbar transparent>
+    <ion-title>Loan History</ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+                      <ion-list *ngIf="loans.length">
+                        <ion-item *ngFor="let loan of loans">
+                        <p>Loan Amount: {{ loan.principal | moneyTransform }}</p>
+                        <p>Date Due: {{ loan.expiration |  expirationTransform }}
+                        </ion-item>  
+                    </ion-list>
+                    <div *ngIf="!loans.length">
+                        <div align="center">
+                            <p class="message">{{ message }}</p>
+                        </div>
+                    </div>
+</ion-content>

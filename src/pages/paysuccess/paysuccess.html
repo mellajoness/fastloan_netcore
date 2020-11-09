@@ -1,0 +1,99 @@
+<!--
+  Created by Akobundu Michael (P7543)
+-->
+<ion-header no-border>
+
+  <ion-navbar hideBackButton transparent>
+    <ion-title></ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding style="background-image: linear-gradient(#247BA0 0%, #0A2463);height:100%">
+
+  <!-- Initial Success div -->
+
+  <div *ngIf="success">
+
+    <div align="center" style="margin-top:30px">
+        <img src="../../assets/img/pay-success.png" width="200" height="200"/>
+    </div>
+
+    <div align="center">
+        <p style="color:#ffffff; font-size: 30px">&#8358;{{ amount | moneyTransform }}</p>
+
+        <p style="color:#ffffff">{{success.message}}</p>
+    </div>
+    <div align="center">
+        <button (click)="done()" ion-button class="done-button">Done</button>
+    </div>
+
+
+  </div>
+
+
+<div *ngIf="this.PayWithCardRESP">
+
+<div *ngIf="this.PayWithCardRESP.code == '00'">
+    <div align="center" style="margin-top:30px">
+        <img src="../../assets/img/pay-success.png" width="200" height="200"/>
+    </div>
+
+    <div align="center">
+        <p style="color:#ffffff">{{PayWithCardRESP.message}}</p>
+    </div>
+    <div align="center">
+        <button (click)="done()" ion-button class="done-button">Done</button>
+    </div>
+
+  </div>
+
+  <div *ngIf="this.PayWithCardRESP.code == '01'">
+      <div align="center" style="margin-top:30px">
+          <img src="../../assets/img/error.png" width="200" height="200"/>
+      </div>
+
+      <div align="center">
+          <p style="color:#ffffff; white-space: normal;">{{PayWithCardRESP.message}}</p>
+      </div>
+      <div align="center">
+          <button (click)="done()" ion-button class="done-button">OK</button>
+      </div>
+
+    </div>
+
+    <div *ngIf="this.PayWithCardRESP.code == '02'">
+        <div align="center" style="margin-top:30px">
+            <img src="../../assets/img/caution.png" width="200" height="200"/>
+        </div>
+
+        <div align="center">
+            <p style="color:#ffffff">{{PayWithCardRESP.message}}</p>
+        </div>
+        <div align="center">
+            <button (click)="done()" ion-button class="done-button">OK</button>
+        </div>
+
+      </div>
+
+  </div>
+
+</ion-content>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+     <div *ngIf="success.code == '012'" align="center" style="margin-top:30px">
+        <img src="../../assets/img/caution.png" width="200" height="200"/>
+    </div>-->
+
+            <!-- <p style="color:#ffffff">Payment Successful</p> -->

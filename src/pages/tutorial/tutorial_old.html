@@ -1,0 +1,30 @@
+<!--<ion-header no-shadow>
+  <ion-navbar style="background:transparent">
+    <ion-buttons end *ngIf="showSkip">
+      <button ion-button (click)="startApp()" color="primary">{{ 'TUTORIAL_SKIP_BUTTON' | translate}}</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>-->
+
+<ion-content no-bounce>
+  <ion-slides autoplay="3000" speed="3000" loop="true" pager="true" dir="{{dir}}"(ionSlideWillChange)="onSlideChangeStart($event)">
+    <ion-slide class="slide-background">
+      <!--<img [src]="slide.image" class="slide-image" />-->
+      <!--<h2 padding class="app-name">{{ 'SLIDES_TITLE' | translate }}</h2>-->
+      <h2 padding class="slide-title">Get an instant loan<br/> within two minutes</h2>
+      <p class="small-text">{{ 'SLIDE1_SMALLTEXT' | translate }}</p>
+    </ion-slide>
+        <ion-slide class="slide2-background">
+      <!--<img [src]="slide.image" class="slide-image" />-->
+      <!--<h2 padding class="app-name">{{ 'SLIDES_TITLE' | translate }}</h2>-->
+      <h2 padding class="slide-title">Higher amounts and<br/>lower interest rates for<br/>returning customers</h2>
+      <p class="small-text-second">Pay on time consistently and get higher<br/>loan offers at reduced interest rates</p>
+    </ion-slide>
+  </ion-slides>
+      <div padding align="center" class="logo">
+        <img src="../../assets/img/mainlogo.png" height="80" width="80"/>
+      </div>
+        <div padding align="center" class="start_button">
+        <button ion-button color="fidelityGreen" class="tutorial-custom-button" (click)="startApp()" round>{{ 'START_BUTTON' | translate }}</button>
+      </div>
+</ion-content>

@@ -1,0 +1,21 @@
+<ion-header no-border>
+
+  <ion-navbar hideBackButton transparent>
+    <ion-title></ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding style="background-image: linear-gradient(#247BA0 0%, #0A2463);height:100%">
+    <div align="center" style="margin-top:30px">
+        <img src="../../assets/img/error.png" width="200" height="200"/>
+    </div>
+
+    <div class="drop" align="center">
+
+        <p style="color:#ffffff">{{failure.message}}</p>
+    </div>
+    <div class="button_drop" align="center">
+        <button (click)="done()" ion-button class="done-button">OK</button>
+    </div>
+</ion-content>

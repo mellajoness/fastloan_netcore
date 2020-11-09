@@ -1,0 +1,88 @@
+<!--
+Created by Akobundu Michael (P7543)
+-->
+<ion-header class="main-header">
+
+  <ion-navbar hideBackButton color="fidelityBlue">
+    <ion-title class="app-title">{{ 'DASHBOARD_TITLE' | translate }}</ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="logout()">
+        <ion-icon style="font-size:25px" name="log-out" showWhen="android,windows,ios"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+  <ion-toolbar color="fidelityBlue" class="header">
+    <div align="center">
+      <h5>{{ 'DASHBOARD_SUBTITLE' | translate }} {{ formatedPhoneNumber }}</h5>
+      <p>Not your number? <a style="color:#78B844" (click)="exitMenu()">click here</a></p>
+    </div>
+
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content padding class="app-content" style="height:100%">
+<ion-grid style="height:100%">
+  <ion-row>
+    <ion-col>
+  <div (click)="requestLoan()" class="box-design">
+  <div align="center" color="fidelityGreenLabel" class="tile-content">
+    <img src="../../assets/img/loan.png" height="50" width="50"/>
+  </div>
+  <p style="text-align:center;color:green">{{ 'DASHBOARD_REQUESTLOAN' | translate }}</p>
+
+</div>
+    </ion-col>
+    <ion-col>
+      <div (click)="payLoan()" class="box-design">
+  <div align="center" color="fidelityGreenLabel" class="tile-content">
+    <img src="../../assets/img/debit-card.png" height="50" width="50"/>
+  </div>
+  <p style="text-align:center;color:green">{{ 'DASHBOARD_PAYLOAN' | translate }}</p>
+
+</div>
+    </ion-col>
+  </ion-row>
+   <ion-row>
+    <ion-col>
+            <div (click)="checkBalance()" class="box-design">
+  <div align="center" color="fidelityGreenLabel" class="tile-content">
+    <img src="../../assets/img/debt.png" height="50" width="50"/>
+  </div>
+  <p style="text-align:center;color:green">{{ 'DASHBOARD_CHECKBALANCE' | translate }}</p>
+
+</div>
+    </ion-col>
+    <ion-col>
+        <div (click)="extendLoan()" class="box-design">
+  <div align="center" color="fidelityGreenLabel" class="tile-content">
+    <img src="../../assets/img/extend.png" height="50" width="50"/>
+  </div>
+  <p style="text-align:center;color:green">{{ 'DASHBOARD_EXTENDLOAN' | translate }}</p>
+
+</div>
+    </ion-col>
+  </ion-row>
+   <ion-row>
+    <ion-col>
+              <div (click)="gotoTerms()" class="box-design">
+  <div align="center" color="fidelityGreenLabel" class="tile-content">
+    <img src="../../assets/img/terms.png" height="50" width="50"/>
+  </div>
+  <p style="text-align:center;color:green">{{ 'DASHBOARD_TERMS' | translate }}</p>
+
+</div>
+    </ion-col>
+    <ion-col>
+        <div (click)="fetchHistory()" class="box-design">
+  <div align="center" color="fidelityGreenLabel" class="tile-content">
+    <img src="../../assets/img/scroll.png" height="50" width="50"/>
+  </div>
+  <p style="text-align:center;color:green">{{ 'DASHBOARD_HISTORY' | translate }}</p>
+
+</div>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>

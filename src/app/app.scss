@@ -1,0 +1,111 @@
+/*
+    Created by Akobundu Michael
+*/
+
+@font-face {
+  font-family: "Lato Regular";
+  src: url("../fonts/e080040fab017e068ee2901a6cdb5ec4.eot"); /* IE9*/
+  src: url("../fonts/e080040fab017e068ee2901a6cdb5ec4.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */
+  url("../assets/fonts/e080040fab017e068ee2901a6cdb5ec4.woff2") format("woff2"),
+    /* chrome、firefox */
+  url("../fonts/e080040fab017e068ee2901a6cdb5ec4.woff") format("woff"),
+    /* chrome、firefox */
+  url("../fonts/e080040fab017e068ee2901a6cdb5ec4.ttf") format("truetype"),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("../fonts/e080040fab017e068ee2901a6cdb5ec4.svg#Lato Regular") format("svg"); /* iOS 4.1- */
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway|Questrial');
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+
+p, div, a {
+  font-family: "Questrial" !important;
+  font-style: normal;
+}
+
+.app-content {
+    margin-top:30p;
+    background: linear-gradient(white, #e9e9e9);
+}
+
+.display-message {
+  text-align: center;
+}
+
+.app-title {
+    text-align: center;
+}
+
+.request-level {
+  font-size:13px; 
+  text-align:center;
+  color:#ffffff;
+}
+.custom-button {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.info {
+    color: #78B844;
+    font-weight: bold;
+}
+
+.sc-ion-back-button-ios-h {
+  color: white;
+}
+
+ion-header ion-icon {
+  color: #ffffff
+}
+
+ion-header {
+  color: #ffffff
+}
+
+.overlay {
+    //position: fixed; /* Sit on top of the page content */ /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(10, 36, 99, 0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer;
+}
+
+.app-blue-content {
+  background-image: linear-gradient(#247BA0 0%, #0A2463); 
+  height: 100%;
+}
+
+    .sidebar_bg {
+        background: url("../../assets/img/sidebarbg.png") no-repeat;
+        background-size: cover;
+
+    }
+
+    .app_bg {
+        background: url("../../assets/img/app_bg.png") no-repeat;
+        background-size: cover;
+
+    }     
+
+    .input-error {
+        color: red;
+        max-width:256px;
+    }
+
+

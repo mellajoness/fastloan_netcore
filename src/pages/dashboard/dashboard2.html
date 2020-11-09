@@ -1,0 +1,55 @@
+<!--
+Created by Akobundu Michael (P7543)
+-->
+<ion-header no-border>
+
+  <ion-navbar transparent>
+    <ion-title class="app-title">{{formatedPhoneNumber}}</ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="logout()">
+        <ion-icon style="font-size:25px" name="log-out" showWhen="android,windows,ios"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content style="background-image: linear-gradient(#247BA0 0%, #0A2463); height: 100%">
+    <div align="center" style="position: absolute;top: 70px; left: 0; bottom: 0; right: 0;">
+        <ion-spinner *ngIf="isBusy" name="bubbles"></ion-spinner>
+        <p *ngIf="!isBusy" style="font-size:30px; color:#ffffff">&#8358; {{ balance | moneyTransform }}</p>
+    </div>
+    <div align="center" style="position: absolute;top: 127px; left: 0; bottom: 0; right: 0;">
+        <p style="font-size:18px; color:#ffffff; line-height:normal">LOAN BALANCE</p>
+    </div>
+    <div align="center" style="position: absolute;top: 164px; left: 0; bottom: 0; right: 0;">
+        <button ion-button style="font-size:11px;width: 175px;height: 29px;border: 1px solid #FFFFFF;line-height:normal;box-sizing: border-box;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);border-radius: 5px;background-color: transparent !important">View Current Loan Details</button>
+    </div>
+    <div style="padding: 10px;position: absolute;top: 261px; left: 0; bottom: 0; right: 0;">
+        <ion-item style="height: 56px;background: #FFFFFF;box-shadow: 0px 5px 5px rgba(10, 36, 99, 0.4);border-radius: 5px;" (click)="requestLoan()">
+            <span><img src="../../assets/img/loans.png" width="30" height="30"/></span> <span style="margin-top:0px;font-size:15px; color:#0A2463">Request for a Loan</span>
+        </ion-item>
+    </div>
+    <div style="padding: 10px;position: absolute;top: 337px; left: 0; bottom: 0; right: 0;">
+        <ion-item style="height: 56px;background: #FFFFFF;box-shadow: 0px 5px 5px rgba(10, 36, 99, 0.4);border-radius: 5px;">
+            <p style="margin-top:5px;font-size:15px;float:left;color:#0A2463"><img src="../../assets/img/credit-card_new.png" width="30" height="30"/> Pay Loan</p>
+        </ion-item>
+    </div>
+    <div style="padding: 10px;position: absolute;top: 413px; left: 0; bottom: 0; right: 0;">
+        <ion-item style="height: 56px;background: #FFFFFF;box-shadow: 0px 5px 5px rgba(10, 36, 99, 0.4);border-radius: 5px;">
+            <p style="margin-top:5px;font-size:15px;float:left;color:#0A2463"><img src="../../assets/img/clock.png" width="30" height="30"/> Extend Loan Period</p>
+        </ion-item>
+    </div>
+    <div style="padding: 10px;position: absolute;top: 489px; left: 0; bottom: 60; right: 0;">
+        <ion-item style="height: 56px;background: #FFFFFF;box-shadow: 0px 5px 5px rgba(10, 36, 99, 0.4);border-radius: 5px;">
+            <p style="margin-top:5px;font-size:15px;float:left;color:#0A2463"><img src="../../assets/img/user-plus.png" width="30" height="30"/> Recommend a Friend</p>
+        </ion-item>
+    </div>
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-title style="text-align:center"><p style="margin-top:5px;font-size:15px;color:#0A2463"><img src="../../assets/img/vector.png" width="25" height="25"/> Show my Loan History</p></ion-title>
+  </ion-toolbar>
+</ion-footer>
