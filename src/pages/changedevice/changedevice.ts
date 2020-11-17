@@ -61,30 +61,30 @@ console.log('Change Device Body', req);
         this.navCtrl.pop();
 
 
-        // let email= this.session._getEmail();
-        // console.log('my email is', email)
+        let email= this.session._getEmail();
+        console.log('my email is', email)
     
-        // const payload = {
-        //   EMAIL: email,
-        //   PHONE: this.phoneNumber,
-        // }
-        // Smartech.setIdentity(payload.EMAIL);
-        // Smartech.track("register",payload);
+        const payload = {
+          EMAIL: email,
+          PHONE: this.phoneNumber,
+        }
+        Smartech.setIdentity(payload.EMAIL);
+        Smartech.track("change device",payload);
     
       
       }
 
 
       this.api.messageHandler(res.message, 5000, 'top');
-    //   let email= this.session._getEmail();
-    //   console.log('my email is', email)
+      let email= this.session._getEmail();
+      console.log('my email is', email)
   
-    //   const payload = {
-    //     EMAIL: email,
-    //     PHONE: this.phoneNumber,
-    //   }
-    //   Smartech.setIdentity(payload.EMAIL);
-    //   Smartech.track("change failed",payload);
+      const payload = {
+        EMAIL: email,
+        PHONE: this.phoneNumber,
+      }
+      Smartech.setIdentity(payload.EMAIL);
+      Smartech.track("change failed",payload);
    }, 
 
 
@@ -97,6 +97,7 @@ console.log('Change Device Body', req);
 
   gotoLogin() {
     this.navCtrl.pop();
+    
   }
 
 }

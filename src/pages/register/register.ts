@@ -96,9 +96,11 @@ export class RegisterPage {
     };
 
     console.log(req, 'Body');
-    this.api.post('login-details', req).subscribe((res: any) => {
-      console.log('Login Details Response', res)
+    this.api.post('login-controller/register-user', req).subscribe((res: any) => {
+      console.log('Register user Response', res)
+      this.loading.hide();  
       if(res.code == '00') {
+
         this.session._setPhoneNumber(res.data.phoneNumber);
         this.session._setSessionKey(res.data.sessionKey);
         this.session._setEmail(res.data.emailAddress);
@@ -110,8 +112,11 @@ export class RegisterPage {
           PHONE: this.phoneNumber,
         }
         Smartech.setIdentity(payload.EMAIL);
-        Smartech.track("register",payload);
-        this.navCtrl.setRoot('DashboardPage');
+        Smartech.track("register step 2",payload);
+
+        
+        // this.navCtrl.setRoot('DashboardPage');
+         this.navCtrl.push('DashboardPage');
       }
       else {
         this.api.messageHandler(res.message, 5000, 'top');
@@ -120,7 +125,7 @@ export class RegisterPage {
     }, (error: any) => {
       this.api.messageHandler(error.error.message);
     }, () => {
-      this.loading.hide();
+      this.loading.hide();  
     });
   }
 

@@ -8,7 +8,7 @@ import { Idle } from '@ng-idle/core'
 
 import { User } from '../../providers';
 import { Loader, Api, Session } from '../../providers';
-
+declare let Smartech:any;
 
 @IonicPage()
 @Component({
@@ -119,6 +119,14 @@ export class LoginPage {
         this.loading.hide();
         console.log(res);
         if(res.code == '00') {
+
+          const payload = {
+           EMAIL: this.form.value.email,
+           PHONE: this.phoneNumber,
+         }
+           Smartech.setIdentity(payload.EMAIL);
+           Smartech.track("register step 1",payload);
+
           this.navCtrl.push('RegisterPage', {phone: this.phoneNumber});
         }
         else {
