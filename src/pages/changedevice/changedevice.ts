@@ -60,33 +60,30 @@ console.log('Change Device Body', req);
         this.api.messageHandler('Device Changed Successfully', 5000, 'top');
         this.navCtrl.pop();
 
-
         let email= this.session._getEmail();
         console.log('my email is', email)
     
         const payload = {
-          EMAIL: email,
-          PHONE: this.phoneNumber,
+          DEVICE: req.newDeviceId,
+          PHONE: this.session._injectCountryCode(this.form.value.phoneNumber),
         }
-        Smartech.setIdentity(payload.EMAIL);
-        Smartech.track("change device",payload);
+        Smartech.setIdentity(payload.PHONE);
+        Smartech.track("CHANGE_DEVICE_SUCCESSFUL",payload);
     
       
       }
-
+else{
 
       this.api.messageHandler(res.message, 5000, 'top');
-      let email= this.session._getEmail();
-      console.log('my email is', email)
-  
-      const payload = {
-        EMAIL: email,
-        PHONE: this.phoneNumber,
-      }
-      Smartech.setIdentity(payload.EMAIL);
-      Smartech.track("change failed",payload);
-   }, 
 
+      const payload = {
+        DEVICE: req.newDeviceId,
+        PHONE: this.session._injectCountryCode(this.form.value.phoneNumber),
+      }
+      Smartech.setIdentity(payload.PHONE);
+      Smartech.track("CHANGE_DEVICE_FAILED",payload);
+   }}, 
+  
 
     (error:any) => {
       this.loading.hide();

@@ -109,10 +109,10 @@ export class RegisterPage {
 
         const payload = {
           EMAIL: this.form.value.email,
-          PHONE: this.phoneNumber,
+          PHONE: res.data.phoneNumber,
         }
         Smartech.setIdentity(payload.EMAIL);
-        Smartech.track("register step 2",payload);
+        Smartech.track("REGISTER_SUCCESSFUL",payload);
 
         
         // this.navCtrl.setRoot('DashboardPage');
@@ -120,6 +120,12 @@ export class RegisterPage {
       }
       else {
         this.api.messageHandler(res.message, 5000, 'top');
+        const payload = {
+          EMAIL: this.form.value.email,
+          REASON_FOR_FAILURE:res.message
+        }
+        Smartech.setIdentity(payload.EMAIL);
+        Smartech.track("REGISTER_STEP_2_FAILED",payload);
       }
 
     }, (error: any) => {

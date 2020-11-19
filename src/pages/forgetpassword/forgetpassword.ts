@@ -4,7 +4,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Loader, Api, Session } from '../../providers';
 import { Idle } from '@ng-idle/core';
 import { Device } from '@ionic-native/device';
-
+declare let Smartech:any;
 /**
  * Generated class for the ForgetpasswordPage page.
  *
@@ -82,11 +82,12 @@ export class ForgetpasswordPage {
         if(res.code == '00') {
           this.question = res.data.secretQuestion;
           this.hasQuestion = true;
+        
           return;
         }
 
         this.api.messageHandler(res.message, 5000, 'top');
-
+      
         //I did this for the purpose of Hint
 
         // if(res.code == '99') {
@@ -129,7 +130,25 @@ export class ForgetpasswordPage {
       console.log('Reset Password Response', res);
       this.api.messageHandler(res.message);
       if(res.code == '00') {
+         
+        const payload = {
+          DEVICEID:req.deviceId,
+          PHONE:  this.session._injectCountryCode(this.form.value.phoneNumber),
+        }
+        Smartech.setIdentity(payload.PHONE);
+        Smartech.track("FORGET_PASSWORD_SUCCESSFUL",payload);
         this.navCtrl.push('SigninPage');
+      }
+      else{
+        this.api.messageHandler(res.message);
+        const payload = {
+          DEVICEID:req.deviceId,
+          PHONE:  this.session._injectCountryCode(this.form.value.phoneNumber),
+        }
+        Smartech.setIdentity(payload.PHONE);
+        Smartech.track("FORGET_PASSWORD_STEP_1_FAILED",payload);
+
+
       }
     }, (error: any) => {
       this.api.messageHandler("An error occured, please try again");

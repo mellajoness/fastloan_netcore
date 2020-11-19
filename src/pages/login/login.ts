@@ -122,14 +122,22 @@ export class LoginPage {
 
           const payload = {
            EMAIL: this.form.value.email,
-           PHONE: this.phoneNumber,
+           PHONE:  this.session._injectCountryCode(this.form.value.phoneNumber),
          }
            Smartech.setIdentity(payload.EMAIL);
-           Smartech.track("register step 1",payload);
+           Smartech.track("REGISTER_STEP_1",payload);
 
           this.navCtrl.push('RegisterPage', {phone: this.phoneNumber});
         }
         else {
+          const payload = {
+            EMAIL: this.form.value.email,
+            PHONE:  this.session._injectCountryCode(this.form.value.phoneNumber),
+          }
+            Smartech.setIdentity(payload.EMAIL);
+            Smartech.track("REGISTER_STEP_1_FAILED",payload);
+ 
+           this.navCtrl.push('RegisterPage', {phone: this.phoneNumber});
           this.api.messageHandler(res.message, 5000);
         }
       }, (error) => {
