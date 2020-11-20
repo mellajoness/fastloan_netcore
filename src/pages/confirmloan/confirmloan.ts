@@ -89,13 +89,13 @@ export class ConfirmloanPage {
 
 
 
-        let email= this.session._getEmail();
-        console.log('my email is', email)
+        let custId= this.session._getCustID();
+        console.log('my email is', custId)
         const payloadata = {
-         EMAIL:email 
+         CUSTOMER_ID:custId 
        
        };
-         Smartech.setIdentity(payloadata.EMAIL);
+         Smartech.setIdentity(payloadata.CUSTOMER_ID);
          Smartech.track("DISBURSEMENT_SUCCESSFUL", payloadata);
 
         this.navCtrl.push('DisbursedPage', {details:details});
@@ -107,6 +107,16 @@ export class ConfirmloanPage {
           buttons: ['Ok']
         });
         alert.present();
+
+        let custId= this.session._getCustID();
+        console.log('my email is', custId)
+        const payloadata = {
+         CUSTOMER_ID:custId 
+       
+       };
+         Smartech.setIdentity(payloadata.CUSTOMER_ID);
+         Smartech.track("DISBURSEMENT_FAILURE", payloadata);
+
       }
     }, (error: any) => {
       this.loading.hide();

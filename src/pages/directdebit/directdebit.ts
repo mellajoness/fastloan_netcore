@@ -81,11 +81,11 @@ export class DirectdebitPage {
         this.api.messageHandler("OTP has been sent to your phone number", 3000, 'bottom');
 
 
-        let email= this.session._getEmail();
+        let custId= this.session._getCustID();
         const payload = {	
-          EMAIL: email
+          CUSTOMER_ID :custId,
           }	
-          Smartech.setIdentity(payload.EMAIL);	
+          Smartech.setIdentity(payload.CUSTOMER_ID);	
           Smartech.track("Pay_Loan_StepThree_PayWith_Fidelity_Success",payload);	
       }
 

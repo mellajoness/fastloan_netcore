@@ -25,15 +25,14 @@ export class PayloanPage {
   }
 
   paywithcard () {
-  //   let email= this.session._getEmail();
-  //   console.log('my email is', email)
+    let custId= this.session._getCustID();
+    console.log('my email is', custId)
   
-  //   const payloadata = {
-  //    EMAIL:email,
-  //    LOAN_TYPE:"test@gmail.com"
-  //  };
-  //    Smartech.setIdentity(payloadata.EMAIL);
-  //    Smartech.track("Pay_Loan_StepThree_PayWith_Fidelity", payloadata);
+    const payloadata = {
+      CUSTOMER_ID :custId,
+   };
+     Smartech.setIdentity(payloadata.CUSTOMER_ID);
+     Smartech.track("Pay_Loan_StepOne_WithCard", payloadata);
   
     this.navCtrl.push('PaywithcardPage');
   }
@@ -43,24 +42,25 @@ export class PayloanPage {
   }
 
   paywithtransfer() {
-    let email= this.session._getEmail();
-    console.log('my email is', email)
+    let custId= this.session._getCustID();
+    console.log('my email is', custId)
   
     const payloadata = {
-     EMAIL:email,
+      CUSTOMER_ID :custId
+      
    };
-     Smartech.setIdentity(payloadata.EMAIL);
+     Smartech.setIdentity(payloadata.CUSTOMER_ID);
      Smartech.track("Pay_Loan_StepThree_PayWith_Fidelity", payloadata);
     this.navCtrl.push('PaywithtransferPage');
   }
 
   paywithBankTransfer() {
-    let email= this.session._getEmail();
-    console.log('my email is', email)
+    let custId= this.session._getCustID();
+    console.log('my email is', custId)
     const payload = {
-      EMAIL:email
+      CUSTOMER_ID :custId
       }
-      Smartech.setIdentity(payload.EMAIL);
+      Smartech.setIdentity(payload.CUSTOMER_ID);
       Smartech.track("Pay_Loan_StepThree_PayWith_Fidelity",payload);
     this.navCtrl.push('DirectdebitPage')
   }

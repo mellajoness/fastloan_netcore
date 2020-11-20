@@ -173,7 +173,19 @@ console.log('Body', req);
 
         this.navCtrl.setRoot('DashboardPage');
       }
-       else if(res.code == '012' && this.platform.is('android')){
+      else if(res.code == '012' && this.platform.is('android')){
+        let email= this.session._getEmail();
+        let custId= this.session._getCustID();
+        const payloadata = {
+          CUSTOMER_ID :custId,
+           EMAIL:email 
+      
+      };
+        Smartech.setIdentity(payloadata.CUSTOMER_ID);
+        Smartech.login(payloadata.CUSTOMER_ID);
+        console.log("Login successful")
+        Smartech.track("USER_LOGIN", payloadata);
+        
         const alert = this.alertCtrl.create({
           title: '<strong>Update Required!</strong>',
           message: res.message,
@@ -189,6 +201,18 @@ console.log('Body', req);
         });
         alert.present();
       } else if (res.code == '012' && this.platform.is('ios')){
+        let email= this.session._getEmail();
+        let custId= this.session._getCustID();
+        const payloadata = {
+          CUSTOMER_ID :custId,
+          EMAIL:email 
+        
+        };
+          Smartech.setIdentity(payloadata.CUSTOMER_ID);
+          Smartech.login(payloadata.CUSTOMER_ID);
+          console.log("Login successful")
+          Smartech.track("USER_LOGIN", payloadata);
+          
         const alert = this.alertCtrl.create({
           title: '<strong>Update Required!</strong>',
           message: res.message,

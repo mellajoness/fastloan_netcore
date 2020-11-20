@@ -74,11 +74,12 @@ export class AddcardPage {
   }
 
   addCardDetails() {
-    let email= this.session._getEmail();
+    let custId= this.session._getCustID();
     const payload = {
-      EMAIL:email
+      CUSTOMER_ID :custId,
+     
         }
-        Smartech.setIdentity(payload.EMAIL);
+        Smartech.setIdentity(payload.CUSTOMER_ID);
         Smartech.track("Loan_Offer_StepThree_Add_Card",payload);
 
 
@@ -87,12 +88,12 @@ export class AddcardPage {
       console.log('add card',res)
       if(res.code == '00') {
 
-        let email= this.session._getEmail();
-        console.log('my email is', email)
+        let custId= this.session._getCustID();
+        console.log('my custid is', custId)
         const payloadata = {
-         EMAIL:email
+         CUSTOMER_ID:custId
        };
-         Smartech.setIdentity(payloadata.EMAIL);
+         Smartech.setIdentity(payloadata.CUSTOMER_ID);
          Smartech.track("ADDCARD_LOGIN", payloadata);
 
         let target = "_self";
@@ -105,14 +106,14 @@ export class AddcardPage {
       }
       else {
         
-        let email= this.session._getEmail();
-        console.log('my email is', email)
+        let custId= this.session._getCustID();
+        console.log('my custid is', custId)
       
         const payloadata = {
-         EMAIL:email,
+         CUSTOMER_ID:custId,
          REASON_FOR_FAILURE:res.message
        };
-         Smartech.setIdentity(payloadata.EMAIL);
+         Smartech.setIdentity(payloadata.CUSTOMER_ID);
          console.log("card successful")
          Smartech.track("ADD_CARD_FAILED", payloadata);
 

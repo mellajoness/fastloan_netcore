@@ -192,13 +192,13 @@ export class DashboardPage {
   }
 
   payLoan () {
-    let email= this.session._getEmail();
-    console.log('my email is', email)
+    let custId= this.session._getCustID();
+    console.log('my email is', custId)
     const payload = {
-      EMAIL:email,
+      CUSTOMER_ID :custId,
       LOAN_TYPE: 'Migo'
       }
-      Smartech.setIdentity(payload.EMAIL);
+      Smartech.setIdentity(payload.CUSTOMER_ID);
       Smartech.track("Pay_Loan_StepOne",payload);
     this.navCtrl.push('PayloanPage');
   }

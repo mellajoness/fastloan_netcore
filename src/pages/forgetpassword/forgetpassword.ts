@@ -130,22 +130,31 @@ export class ForgetpasswordPage {
       console.log('Reset Password Response', res);
       this.api.messageHandler(res.message);
       if(res.code == '00') {
-         
+        
+        let email= this.session._getEmail();
+        let custId= this.session._getCustID();
+        console.log('my email is', email)
+        console.log('my cust id', custId)
         const payload = {
-          DEVICEID:req.deviceId,
-          PHONE:  this.session._injectCountryCode(this.form.value.phoneNumber),
+          CUSTOMER_ID :custId,
+          EMAIL:email 
         }
-        Smartech.setIdentity(payload.PHONE);
+        Smartech.setIdentity(payload.CUSTOMER_ID);
         Smartech.track("FORGET_PASSWORD_SUCCESSFUL",payload);
         this.navCtrl.push('SigninPage');
       }
       else{
         this.api.messageHandler(res.message);
+
+        let email= this.session._getEmail();
+        let custId= this.session._getCustID();
+        console.log('my email is', email)
+        console.log('my cust id', custId)
         const payload = {
-          DEVICEID:req.deviceId,
-          PHONE:  this.session._injectCountryCode(this.form.value.phoneNumber),
+          CUSTOMER_ID :custId,
+          EMAIL:email 
         }
-        Smartech.setIdentity(payload.PHONE);
+        Smartech.setIdentity(payload.CUSTOMER_ID);
         Smartech.track("FORGET_PASSWORD_STEP_1_FAILED",payload);
 
 

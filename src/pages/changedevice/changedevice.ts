@@ -38,7 +38,7 @@ export class ChangedevicePage {
 
   ionViewWillEnter() {
     this.idle.stop();
-  }
+  }   
 
   ionViewWillLeave() {
     this.idle.watch();
@@ -48,8 +48,8 @@ export class ChangedevicePage {
     var req = {
       phoneNumber: this.session._injectCountryCode(this.form.value.phoneNumber),
       password: this.form.value.password,
-      //newDeviceId: this.device.uuid//'df1284ucnod'
-      newDeviceId: 'qwerty'
+      // newDeviceId: this.device.uuid     //'df1284ucnod'
+      newDeviceId: '79b8f6b41479cde4'
     }
 console.log('Change Device Body', req);
     this.loading.show('Changing your device...');
@@ -57,18 +57,19 @@ console.log('Change Device Body', req);
       console.log('Change Device Response', res);
       this.loading.hide();
       if(res.code == '00') {
-        this.api.messageHandler('Device Changed Successfully', 5000, 'top');
-        this.navCtrl.pop();
-
+        this.api.messageHandler(res.message, 5000, 'top');
+        // this.navCtrl.pop();
         let email= this.session._getEmail();
+        let custId= 'R04265456'
         console.log('my email is', email)
-    
+        console.log('my cust id', custId)
         const payload = {
-          DEVICE: req.newDeviceId,
-          PHONE: this.session._injectCountryCode(this.form.value.phoneNumber),
+          CUSTOMER_ID :custId,
+          EMAIL:email,
         }
-        Smartech.setIdentity(payload.PHONE);
+        Smartech.setIdentity(payload.CUSTOMER_ID);
         Smartech.track("CHANGE_DEVICE_SUCCESSFUL",payload);
+        console.log("card successful")
     
       
       }
@@ -77,7 +78,7 @@ else{
       this.api.messageHandler(res.message, 5000, 'top');
 
       const payload = {
-        DEVICE: req.newDeviceId,
+        REASON_FOR_FAILURE:res.message,
         PHONE: this.session._injectCountryCode(this.form.value.phoneNumber),
       }
       Smartech.setIdentity(payload.PHONE);

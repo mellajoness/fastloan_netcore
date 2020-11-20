@@ -88,14 +88,14 @@ export class CardlistPage {
 
           this.viewCtrl.dismiss(params);
 
-          let email= this.session._getEmail();
-          console.log('my email is', email)
+          let custId= this.session._getCustID();
+          console.log('my email is', custId)
         
           const payloadata = {
-           EMAIL:email,
+           CUSTOMER_ID:custId,
           
          };
-           Smartech.setIdentity(payloadata.EMAIL);
+           Smartech.setIdentity(payloadata.CUSTOMER_ID);
            Smartech.track("Pay_Loan_StepThree_WithCard_succcess", payloadata);
   
         }
@@ -106,14 +106,14 @@ export class CardlistPage {
 
         
                 
-        let email= this.session._getEmail();
-        console.log('my email is', email)
+        let custId= this.session._getCustID();
+        console.log('my email is', custId)
       
         const payloadata = {
-         EMAIL:email,
+         CUSTOMER_ID:custId,
          REASON_FOR_FAILURE: error.error.message
        };
-         Smartech.setIdentity(payloadata.EMAIL);
+         Smartech.setIdentity(payloadata.CUSTOMER_ID);
          console.log("card successful")
          Smartech.track("Pay_Loan_StepThree_WithCard_Failed", payloadata);
 

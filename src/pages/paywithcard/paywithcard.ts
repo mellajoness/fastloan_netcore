@@ -183,14 +183,14 @@ export class PaywithcardPage {
 
   
    console.log('bank',this.bankName)
-    let email= this.session._getEmail();
+   let custId= this.session._getCustID();
     const payload = {
-      EMAIL: email,
+      CUSTOMER_ID :custId,
       LOAN_TYPE: "Migo",
       BANK: this.bankName
       }
-      Smartech.setIdentity(payload.EMAIL);
-      Smartech.track("Pay_Loan_StepThree_WithCard",payload);
+      Smartech.setIdentity(payload.CUSTOMER_ID);
+      Smartech.track("Pay_Loan_StepTwo_WithCard",payload);
 
 
     let pay = this.modal.create('CardlistPage', {card: card});

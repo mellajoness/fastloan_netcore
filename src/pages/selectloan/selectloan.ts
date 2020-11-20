@@ -177,12 +177,12 @@ export class SelectloanPage {
     //this.isReadyToProceed = true;
     this.gotoAddCard();
 
-    let email= this.session._getEmail();
+    let custId= this.session._getCustID();
     const payload = {
-      EMAIL: email,
+      CUSTOMER_ID :custId,
       BANK:this.request.bankName
         }
-        Smartech.setIdentity(payload.EMAIL);
+        Smartech.setIdentity(payload.CUSTOMER_ID);
         Smartech.track("Loan_Offer_StepTwo",payload);
 
   }

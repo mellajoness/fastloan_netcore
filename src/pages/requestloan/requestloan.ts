@@ -93,17 +93,26 @@ export class RequestloanPage {
         this.request.timestamp = offer.timestamp;
         this.navCtrl.push('SelectloanPage', {request: this.request});
 
-        let email= this.session._getEmail();
-        console.log('my email is', email)
+        let custId= this.session._getCustID();
+        console.log('my email is', custId)
 
         const payload = {
-          EMAIL:email,
+          CUSTOMER_ID :custId,
           OFFER_TYPE:'Migo'
             }
-            Smartech.setIdentity(payload.EMAIL);
+            Smartech.setIdentity(payload.CUSTOMER_ID);
             Smartech.track("Loan_Offer_StepOne",payload);
       }
       else {
+        let custId= this.session._getCustID();
+        console.log('my email is', custId)
+
+        const payload = {
+          CUSTOMER_ID :custId,
+          OFFER_TYPE:'Migo'
+            }
+            Smartech.setIdentity(payload.CUSTOMER_ID);
+            Smartech.track("LOAN_OFFER_STEPONE_FAILED",payload);
         this.api.messageHandler(res.message, 5000);
       }
     }, (error) => {
