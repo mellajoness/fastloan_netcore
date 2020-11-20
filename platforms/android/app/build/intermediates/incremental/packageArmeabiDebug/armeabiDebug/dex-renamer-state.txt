@@ -1,0 +1,4 @@
+#Fri Nov 20 15:38:01 WAT 2020
+base.0=C\:\\Users\\LONGBRIDGE\\Documents\\ionic\\fastloan_netcore\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\armeabi\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex

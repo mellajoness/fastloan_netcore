@@ -1,0 +1,574 @@
+-- Merging decision tree log ---
+provider#nl.xservices.plugins.FileProvider
+INJECTED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:17:9-19:20
+	android:grantUriPermissions
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:17:100-134
+	android:authorities
+		INJECTED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:17:19-74
+	android:exported
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:17:75-99
+	android:name
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:17:135-183
+manifest
+ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:2:1-31:12
+MERGED from [org.xwalk:xwalk_core_library:23.53.589.4] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\xwalk_core_library-23.53.589.4.aar\5c53946acbd8c321af551710f9eaf3cd\AndroidManifest.xml:1:1-9:12
+MERGED from [in.netcore.smartechfcm:smartech-fcm:2.0.10] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\smartech-fcm-2.0.10.aar\959eccdbe2e1654728ea8e80816fc186\AndroidManifest.xml:2:1-36:12
+MERGED from [com.google.firebase:firebase-messaging:17.6.0] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-messaging-17.6.0.aar\54fce4880150e9cbcbfc5e34c788d0ac\AndroidManifest.xml:17:1-37:12
+MERGED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.1.2.aar\f5026ba7ac5daf526810d2be8933f4df\AndroidManifest.xml:17:1-59:12
+MERGED from [com.google.firebase:firebase-common:16.1.0] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-common-16.1.0.aar\dfaa8fa2b4cc64471d7613bbdf8dfd2c\AndroidManifest.xml:2:1-19:12
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-iid-interop-16.0.1.aar\43b47dc3460aed4d7b3abbe6899cf827\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\abb2e0cc655c2ebc14bc9c0252f36458\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\9b3fc1c9005f4dbb8eae8eb1bf8935fb\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-17.0.1.aar\8ef1338963b2c62a8fbf4242a632aed2\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\play-services-stats-16.0.1.aar\ebb77a57364d77f017e84af5abe396a6\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\b3df0f140ba74b9402991f332a283fda\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\3796cce81a89d431bbe70a94ef155ad4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\67022cea98fd5caf5635449482e095ff\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\8c43f1451324d62fb5dc8204af43bcf5\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:17:1-123:12
+MERGED from [android.arch.lifecycle:extensions:1.1.0] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\extensions-1.1.0.aar\6df172887717b14ceeb3145aa8ba7194\AndroidManifest.xml:17:1-30:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\415e32238cca0d5c148f68035f91006d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\0f9be880e5cd895047a032292a328206\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\a03496a6549f3e4bbf8888a19a5aef30\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.persistence.room:runtime:1.1.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\fff3094d2cb0c757f7bc640a23695327\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\39c38fff25f73638c536a4c8019e14d0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\0100e226d1a5ae6fe8715c8b7d4e75ba\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\cef325d1efd4a127b8c3ea27d7bbfff2\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\bc536aeca18a6ed5f93e15db79a65cb6\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\a18c245106f228cb2b742a36869870a0\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.0] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\livedata-1.1.0.aar\9e7d78609e56a940d470918e1d1bf51a\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\d9bd92b1d9d9e8a461f85646a012549c\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.persistence:db-framework:1.1.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\db-framework-1.1.1.aar\92dc866e4cb9d0a46a779a639ab1652b\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.persistence:db:1.1.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\db-1.1.1.aar\90c7fc022ad33e1097a5557ab5636cad\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\55f3c7d835312c68324d7a8cca30696b\AndroidManifest.xml:17:1-22:12
+MERGED from [:CordovaLib] C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\CordovaLib\build\intermediates\manifests\full\debug\AndroidManifest.xml:20:1-27:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\e6b3d84a4d456c7f371411974ba62d4f\AndroidManifest.xml:2:1-11:12
+INJECTED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:2:1-31:12
+	package
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:2:98-136
+		INJECTED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:2:70-97
+		INJECTED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml
+	android:hardwareAccelerated
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:2:11-45
+	xmlns:android
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:2:137-195
+	android:versionCode
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:2:46-69
+		INJECTED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml
+supports-screens
+ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:3:5-191
+	android:largeScreens
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:3:49-76
+	android:smallScreens
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:3:132-159
+	android:normalScreens
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:3:77-105
+	android:xlargeScreens
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:3:160-188
+	android:resizeable
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:3:106-131
+	android:anyDensity
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:3:23-48
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:4:5-67
+MERGED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.1.2.aar\f5026ba7ac5daf526810d2be8933f4df\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.1.2.aar\f5026ba7ac5daf526810d2be8933f4df\AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:4:22-64
+application
+ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:5:5-25:19
+MERGED from [in.netcore.smartechfcm:smartech-fcm:2.0.10] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\smartech-fcm-2.0.10.aar\959eccdbe2e1654728ea8e80816fc186\AndroidManifest.xml:16:5-34:19
+MERGED from [in.netcore.smartechfcm:smartech-fcm:2.0.10] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\smartech-fcm-2.0.10.aar\959eccdbe2e1654728ea8e80816fc186\AndroidManifest.xml:16:5-34:19
+MERGED from [com.google.firebase:firebase-messaging:17.6.0] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-messaging-17.6.0.aar\54fce4880150e9cbcbfc5e34c788d0ac\AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.firebase:firebase-messaging:17.6.0] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-messaging-17.6.0.aar\54fce4880150e9cbcbfc5e34c788d0ac\AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.1.2.aar\f5026ba7ac5daf526810d2be8933f4df\AndroidManifest.xml:28:5-57:19
+MERGED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.1.2.aar\f5026ba7ac5daf526810d2be8933f4df\AndroidManifest.xml:28:5-57:19
+MERGED from [com.google.firebase:firebase-common:16.1.0] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-common-16.1.0.aar\dfaa8fa2b4cc64471d7613bbdf8dfd2c\AndroidManifest.xml:11:5-17:19
+MERGED from [com.google.firebase:firebase-common:16.1.0] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-common-16.1.0.aar\dfaa8fa2b4cc64471d7613bbdf8dfd2c\AndroidManifest.xml:11:5-17:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-iid-interop-16.0.1.aar\43b47dc3460aed4d7b3abbe6899cf827\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-iid-interop-16.0.1.aar\43b47dc3460aed4d7b3abbe6899cf827\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\abb2e0cc655c2ebc14bc9c0252f36458\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\abb2e0cc655c2ebc14bc9c0252f36458\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\9b3fc1c9005f4dbb8eae8eb1bf8935fb\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\9b3fc1c9005f4dbb8eae8eb1bf8935fb\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-17.0.1.aar\8ef1338963b2c62a8fbf4242a632aed2\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-17.0.1.aar\8ef1338963b2c62a8fbf4242a632aed2\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\play-services-stats-16.0.1.aar\ebb77a57364d77f017e84af5abe396a6\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\play-services-stats-16.0.1.aar\ebb77a57364d77f017e84af5abe396a6\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\b3df0f140ba74b9402991f332a283fda\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\b3df0f140ba74b9402991f332a283fda\AndroidManifest.xml:22:5-26:19
+MERGED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:27:5-121:19
+MERGED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:27:5-121:19
+MERGED from [android.arch.lifecycle:extensions:1.1.0] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\extensions-1.1.0.aar\6df172887717b14ceeb3145aa8ba7194\AndroidManifest.xml:22:5-28:19
+MERGED from [android.arch.lifecycle:extensions:1.1.0] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\extensions-1.1.0.aar\6df172887717b14ceeb3145aa8ba7194\AndroidManifest.xml:22:5-28:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\e6b3d84a4d456c7f371411974ba62d4f\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\e6b3d84a4d456c7f371411974ba62d4f\AndroidManifest.xml:9:5-20
+	android:supportsRtl
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:5:205-231
+	android:label
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:5:81-113
+	android:hardwareAccelerated
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:5:18-52
+	android:icon
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:5:53-80
+	android:networkSecurityConfig
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:5:144-204
+	android:usesCleartextTraffic
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:5:232-267
+	android:name
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:5:114-143
+activity#io.fidelity.fidelityfastloan.MainActivity
+ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:6:9-11:20
+	android:screenOrientation
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:6:194-230
+	android:label
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:6:97-134
+	android:launchMode
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:6:135-165
+	android:windowSoftInputMode
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:6:294-336
+	android:configChanges
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:6:19-96
+	android:theme
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:6:231-293
+	android:name
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:6:166-193
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:7:13-10:29
+	android:label
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:7:28-65
+action#android.intent.action.MAIN
+ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:8:17-69
+	android:name
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:8:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:9:17-77
+	android:name
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:9:27-74
+receiver#nl.xservices.plugins.ShareChooserPendingIntent
+ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:12:9-16:20
+	android:enabled
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:12:19-41
+	android:name
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:12:42-103
+intent-filter#android.intent.action.SEND
+ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:13:13-15:29
+action#android.intent.action.SEND
+ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:14:25-66
+service#io.fidelity.fidelityfastloan.MyFirebaseMessagingService
+ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:20:9-24:19
+	android:name
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:20:18-60
+intent-filter#com.google.firebase.MESSAGING_EVENT
+ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:21:13-23:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:22:17-78
+	android:name
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:22:25-75
+uses-sdk
+ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:26:5-74
+INJECTED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:26:5-74
+MERGED from [org.xwalk:xwalk_core_library:23.53.589.4] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\xwalk_core_library-23.53.589.4.aar\5c53946acbd8c321af551710f9eaf3cd\AndroidManifest.xml:6:5-8:41
+MERGED from [org.xwalk:xwalk_core_library:23.53.589.4] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\xwalk_core_library-23.53.589.4.aar\5c53946acbd8c321af551710f9eaf3cd\AndroidManifest.xml:6:5-8:41
+MERGED from [in.netcore.smartechfcm:smartech-fcm:2.0.10] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\smartech-fcm-2.0.10.aar\959eccdbe2e1654728ea8e80816fc186\AndroidManifest.xml:8:5-10:41
+MERGED from [in.netcore.smartechfcm:smartech-fcm:2.0.10] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\smartech-fcm-2.0.10.aar\959eccdbe2e1654728ea8e80816fc186\AndroidManifest.xml:8:5-10:41
+MERGED from [com.google.firebase:firebase-messaging:17.6.0] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-messaging-17.6.0.aar\54fce4880150e9cbcbfc5e34c788d0ac\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:17.6.0] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-messaging-17.6.0.aar\54fce4880150e9cbcbfc5e34c788d0ac\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.1.2.aar\f5026ba7ac5daf526810d2be8933f4df\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.1.2.aar\f5026ba7ac5daf526810d2be8933f4df\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-common:16.1.0] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-common-16.1.0.aar\dfaa8fa2b4cc64471d7613bbdf8dfd2c\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common:16.1.0] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-common-16.1.0.aar\dfaa8fa2b4cc64471d7613bbdf8dfd2c\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-iid-interop-16.0.1.aar\43b47dc3460aed4d7b3abbe6899cf827\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-iid-interop-16.0.1.aar\43b47dc3460aed4d7b3abbe6899cf827\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\abb2e0cc655c2ebc14bc9c0252f36458\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\abb2e0cc655c2ebc14bc9c0252f36458\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\9b3fc1c9005f4dbb8eae8eb1bf8935fb\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\9b3fc1c9005f4dbb8eae8eb1bf8935fb\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-17.0.1.aar\8ef1338963b2c62a8fbf4242a632aed2\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-17.0.1.aar\8ef1338963b2c62a8fbf4242a632aed2\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\play-services-stats-16.0.1.aar\ebb77a57364d77f017e84af5abe396a6\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\play-services-stats-16.0.1.aar\ebb77a57364d77f017e84af5abe396a6\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\b3df0f140ba74b9402991f332a283fda\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\b3df0f140ba74b9402991f332a283fda\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\3796cce81a89d431bbe70a94ef155ad4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\3796cce81a89d431bbe70a94ef155ad4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\67022cea98fd5caf5635449482e095ff\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\67022cea98fd5caf5635449482e095ff\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\8c43f1451324d62fb5dc8204af43bcf5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\8c43f1451324d62fb5dc8204af43bcf5\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:21:5-44
+MERGED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:21:5-44
+MERGED from [android.arch.lifecycle:extensions:1.1.0] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\extensions-1.1.0.aar\6df172887717b14ceeb3145aa8ba7194\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:extensions:1.1.0] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\extensions-1.1.0.aar\6df172887717b14ceeb3145aa8ba7194\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\415e32238cca0d5c148f68035f91006d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\415e32238cca0d5c148f68035f91006d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\0f9be880e5cd895047a032292a328206\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\0f9be880e5cd895047a032292a328206\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\a03496a6549f3e4bbf8888a19a5aef30\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\a03496a6549f3e4bbf8888a19a5aef30\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence.room:runtime:1.1.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\fff3094d2cb0c757f7bc640a23695327\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence.room:runtime:1.1.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\fff3094d2cb0c757f7bc640a23695327\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\39c38fff25f73638c536a4c8019e14d0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\39c38fff25f73638c536a4c8019e14d0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\0100e226d1a5ae6fe8715c8b7d4e75ba\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\0100e226d1a5ae6fe8715c8b7d4e75ba\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\cef325d1efd4a127b8c3ea27d7bbfff2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\cef325d1efd4a127b8c3ea27d7bbfff2\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\bc536aeca18a6ed5f93e15db79a65cb6\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\bc536aeca18a6ed5f93e15db79a65cb6\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\a18c245106f228cb2b742a36869870a0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\a18c245106f228cb2b742a36869870a0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.0] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\livedata-1.1.0.aar\9e7d78609e56a940d470918e1d1bf51a\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.0] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\livedata-1.1.0.aar\9e7d78609e56a940d470918e1d1bf51a\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\d9bd92b1d9d9e8a461f85646a012549c\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\d9bd92b1d9d9e8a461f85646a012549c\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db-framework:1.1.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\db-framework-1.1.1.aar\92dc866e4cb9d0a46a779a639ab1652b\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db-framework:1.1.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\db-framework-1.1.1.aar\92dc866e4cb9d0a46a779a639ab1652b\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db:1.1.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\db-1.1.1.aar\90c7fc022ad33e1097a5557ab5636cad\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db:1.1.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\db-1.1.1.aar\90c7fc022ad33e1097a5557ab5636cad\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\55f3c7d835312c68324d7a8cca30696b\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\55f3c7d835312c68324d7a8cca30696b\AndroidManifest.xml:20:5-44
+MERGED from [:CordovaLib] C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\CordovaLib\build\intermediates\manifests\full\debug\AndroidManifest.xml:25:5-44
+MERGED from [:CordovaLib] C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\CordovaLib\build\intermediates\manifests\full\debug\AndroidManifest.xml:25:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\e6b3d84a4d456c7f371411974ba62d4f\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\e6b3d84a4d456c7f371411974ba62d4f\AndroidManifest.xml:5:5-7:41
+INJECTED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:26:5-74
+	android:targetSdkVersion
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:26:42-71
+	android:minSdkVersion
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:26:15-41
+		INJECTED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.USE_FINGERPRINT
+ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:27:5-74
+	android:name
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:27:22-71
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:28:5-81
+	android:name
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:28:22-78
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:29:5-79
+MERGED from [in.netcore.smartechfcm:smartech-fcm:2.0.10] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\smartech-fcm-2.0.10.aar\959eccdbe2e1654728ea8e80816fc186\AndroidManifest.xml:12:5-14:30
+MERGED from [in.netcore.smartechfcm:smartech-fcm:2.0.10] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\smartech-fcm-2.0.10.aar\959eccdbe2e1654728ea8e80816fc186\AndroidManifest.xml:12:5-14:30
+MERGED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.1.2.aar\f5026ba7ac5daf526810d2be8933f4df\AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.1.2.aar\f5026ba7ac5daf526810d2be8933f4df\AndroidManifest.xml:22:5-79
+MERGED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:24:5-79
+MERGED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:24:5-79
+	tools:node
+		ADDED from [in.netcore.smartechfcm:smartech-fcm:2.0.10] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\smartech-fcm-2.0.10.aar\959eccdbe2e1654728ea8e80816fc186\AndroidManifest.xml:14:9-27
+	android:name
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:29:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:30:5-76
+	android:name
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:30:22-73
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:18:13-115
+	android:resource
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:18:75-112
+	android:name
+		ADDED from C:\Users\LONGBRIDGE\Documents\ionic\fastloan_netcore\platforms\android\app\src\main\AndroidManifest.xml:18:24-74
+service#in.netcore.smartechfcm.pushnotification.FirebaseMessagingService
+ADDED from [in.netcore.smartechfcm:smartech-fcm:2.0.10] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\smartech-fcm-2.0.10.aar\959eccdbe2e1654728ea8e80816fc186\AndroidManifest.xml:19:9-23:19
+	android:name
+		ADDED from [in.netcore.smartechfcm:smartech-fcm:2.0.10] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\smartech-fcm-2.0.10.aar\959eccdbe2e1654728ea8e80816fc186\AndroidManifest.xml:19:18-97
+service#in.netcore.smartechfcm.pushnotification.FirebaseInstanceIDService
+ADDED from [in.netcore.smartechfcm:smartech-fcm:2.0.10] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\smartech-fcm-2.0.10.aar\959eccdbe2e1654728ea8e80816fc186\AndroidManifest.xml:24:9-28:19
+	android:name
+		ADDED from [in.netcore.smartechfcm:smartech-fcm:2.0.10] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\smartech-fcm-2.0.10.aar\959eccdbe2e1654728ea8e80816fc186\AndroidManifest.xml:24:18-98
+intent-filter#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [in.netcore.smartechfcm:smartech-fcm:2.0.10] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\smartech-fcm-2.0.10.aar\959eccdbe2e1654728ea8e80816fc186\AndroidManifest.xml:25:13-27:29
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [in.netcore.smartechfcm:smartech-fcm:2.0.10] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\smartech-fcm-2.0.10.aar\959eccdbe2e1654728ea8e80816fc186\AndroidManifest.xml:26:17-80
+	android:name
+		ADDED from [in.netcore.smartechfcm:smartech-fcm:2.0.10] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\smartech-fcm-2.0.10.aar\959eccdbe2e1654728ea8e80816fc186\AndroidManifest.xml:26:25-77
+receiver#in.netcore.smartechfcm.StateListener
+ADDED from [in.netcore.smartechfcm:smartech-fcm:2.0.10] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\smartech-fcm-2.0.10.aar\959eccdbe2e1654728ea8e80816fc186\AndroidManifest.xml:30:9-32:38
+	android:enabled
+		ADDED from [in.netcore.smartechfcm:smartech-fcm:2.0.10] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\smartech-fcm-2.0.10.aar\959eccdbe2e1654728ea8e80816fc186\AndroidManifest.xml:32:13-35
+	android:name
+		ADDED from [in.netcore.smartechfcm:smartech-fcm:2.0.10] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\smartech-fcm-2.0.10.aar\959eccdbe2e1654728ea8e80816fc186\AndroidManifest.xml:31:13-64
+receiver#in.netcore.smartechfcm.carousel.CarouselEventReceiver
+ADDED from [in.netcore.smartechfcm:smartech-fcm:2.0.10] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\smartech-fcm-2.0.10.aar\959eccdbe2e1654728ea8e80816fc186\AndroidManifest.xml:33:9-90
+	android:name
+		ADDED from [in.netcore.smartechfcm:smartech-fcm:2.0.10] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\smartech-fcm-2.0.10.aar\959eccdbe2e1654728ea8e80816fc186\AndroidManifest.xml:33:19-87
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:17.6.0] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-messaging-17.6.0.aar\54fce4880150e9cbcbfc5e34c788d0ac\AndroidManifest.xml:28:9-34:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:17.6.0] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-messaging-17.6.0.aar\54fce4880150e9cbcbfc5e34c788d0ac\AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:17.6.0] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-messaging-17.6.0.aar\54fce4880150e9cbcbfc5e34c788d0ac\AndroidManifest.xml:29:13-82
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.1.2.aar\f5026ba7ac5daf526810d2be8933f4df\AndroidManifest.xml:24:5-68
+MERGED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:23:5-68
+MERGED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:23:5-68
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.1.2.aar\f5026ba7ac5daf526810d2be8933f4df\AndroidManifest.xml:24:22-65
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.1.2.aar\f5026ba7ac5daf526810d2be8933f4df\AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.1.2.aar\f5026ba7ac5daf526810d2be8933f4df\AndroidManifest.xml:26:22-79
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.1.2.aar\f5026ba7ac5daf526810d2be8933f4df\AndroidManifest.xml:29:9-35:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.1.2.aar\f5026ba7ac5daf526810d2be8933f4df\AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.1.2.aar\f5026ba7ac5daf526810d2be8933f4df\AndroidManifest.xml:30:13-84
+meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
+ADDED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.1.2.aar\f5026ba7ac5daf526810d2be8933f4df\AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.1.2.aar\f5026ba7ac5daf526810d2be8933f4df\AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.1.2.aar\f5026ba7ac5daf526810d2be8933f4df\AndroidManifest.xml:33:17-96
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.1.2.aar\f5026ba7ac5daf526810d2be8933f4df\AndroidManifest.xml:37:9-44:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.1.2.aar\f5026ba7ac5daf526810d2be8933f4df\AndroidManifest.xml:39:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.1.2.aar\f5026ba7ac5daf526810d2be8933f4df\AndroidManifest.xml:40:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.1.2.aar\f5026ba7ac5daf526810d2be8933f4df\AndroidManifest.xml:38:13-78
+intent-filter#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.1.2.aar\f5026ba7ac5daf526810d2be8933f4df\AndroidManifest.xml:41:13-43:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.1.2.aar\f5026ba7ac5daf526810d2be8933f4df\AndroidManifest.xml:42:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.1.2.aar\f5026ba7ac5daf526810d2be8933f4df\AndroidManifest.xml:42:25-78
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.1.2.aar\f5026ba7ac5daf526810d2be8933f4df\AndroidManifest.xml:50:9-56:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.1.2.aar\f5026ba7ac5daf526810d2be8933f4df\AndroidManifest.xml:52:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.1.2.aar\f5026ba7ac5daf526810d2be8933f4df\AndroidManifest.xml:51:13-77
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:16.1.0] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-common-16.1.0.aar\dfaa8fa2b4cc64471d7613bbdf8dfd2c\AndroidManifest.xml:12:9-16:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:16.1.0] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-common-16.1.0.aar\dfaa8fa2b4cc64471d7613bbdf8dfd2c\AndroidManifest.xml:14:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:16.1.0] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-common-16.1.0.aar\dfaa8fa2b4cc64471d7613bbdf8dfd2c\AndroidManifest.xml:15:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:16.1.0] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-common-16.1.0.aar\dfaa8fa2b4cc64471d7613bbdf8dfd2c\AndroidManifest.xml:16:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:16.1.0] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\firebase-common-16.1.0.aar\dfaa8fa2b4cc64471d7613bbdf8dfd2c\AndroidManifest.xml:13:13-77
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\abb2e0cc655c2ebc14bc9c0252f36458\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\abb2e0cc655c2ebc14bc9c0252f36458\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\abb2e0cc655c2ebc14bc9c0252f36458\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\abb2e0cc655c2ebc14bc9c0252f36458\AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\b3df0f140ba74b9402991f332a283fda\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\b3df0f140ba74b9402991f332a283fda\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\b3df0f140ba74b9402991f332a283fda\AndroidManifest.xml:24:13-58
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:25:5-81
+	android:name
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:25:22-78
+provider#androidx.work.impl.WorkManagerInitializer
+ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:28:9-34:35
+	android:authorities
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:30:13-68
+	android:multiprocess
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:33:13-40
+	android:exported
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:32:13-37
+	tools:targetApi
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:34:13-32
+	android:directBootAware
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:31:13-44
+	android:name
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:29:13-69
+service#androidx.work.impl.background.systemalarm.SystemAlarmService
+ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:36:9-41:35
+	android:enabled
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:39:13-72
+	android:exported
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:40:13-37
+	tools:targetApi
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:41:13-32
+	android:directBootAware
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:38:13-44
+	android:name
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:37:13-88
+service#androidx.work.impl.background.systemjob.SystemJobService
+ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:42:9-48:35
+	android:enabled
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:45:13-70
+	android:exported
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:46:13-36
+	android:permission
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:47:13-69
+	tools:targetApi
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:48:13-32
+	android:directBootAware
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:44:13-44
+	android:name
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:43:13-84
+receiver#androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver
+ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:50:9-55:35
+	android:enabled
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:53:13-35
+	android:exported
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:54:13-37
+	tools:targetApi
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:55:13-32
+	android:directBootAware
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:52:13-44
+	android:name
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:51:13-88
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy
+ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:56:9-66:20
+	android:enabled
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:59:13-36
+	android:exported
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:60:13-37
+	tools:targetApi
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:61:13-32
+	android:directBootAware
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:58:13-44
+	android:name
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:57:13-106
+intent-filter#android.intent.action.ACTION_POWER_CONNECTED+android.intent.action.ACTION_POWER_DISCONNECTED
+ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:62:13-65:29
+action#android.intent.action.ACTION_POWER_CONNECTED
+ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:63:17-87
+	android:name
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:63:25-84
+action#android.intent.action.ACTION_POWER_DISCONNECTED
+ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:64:17-90
+	android:name
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:64:25-87
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy
+ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:67:9-77:20
+	android:enabled
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:70:13-36
+	android:exported
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:71:13-37
+	tools:targetApi
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:72:13-32
+	android:directBootAware
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:69:13-44
+	android:name
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:68:13-104
+intent-filter#android.intent.action.BATTERY_LOW+android.intent.action.BATTERY_OKAY
+ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:73:13-76:29
+action#android.intent.action.BATTERY_OKAY
+ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:74:17-77
+	android:name
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:74:25-74
+action#android.intent.action.BATTERY_LOW
+ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:75:17-76
+	android:name
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:75:25-73
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy
+ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:78:9-88:20
+	android:enabled
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:81:13-36
+	android:exported
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:82:13-37
+	tools:targetApi
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:83:13-32
+	android:directBootAware
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:80:13-44
+	android:name
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:79:13-104
+intent-filter#android.intent.action.DEVICE_STORAGE_LOW+android.intent.action.DEVICE_STORAGE_OK
+ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:84:13-87:29
+action#android.intent.action.DEVICE_STORAGE_LOW
+ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:85:17-83
+	android:name
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:85:25-80
+action#android.intent.action.DEVICE_STORAGE_OK
+ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:86:17-82
+	android:name
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:86:25-79
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy
+ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:89:9-98:20
+	android:enabled
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:92:13-36
+	android:exported
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:93:13-37
+	tools:targetApi
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:94:13-32
+	android:directBootAware
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:91:13-44
+	android:name
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:90:13-103
+intent-filter#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:95:13-97:29
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:96:17-79
+	android:name
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:96:25-76
+receiver#androidx.work.impl.background.systemalarm.RescheduleReceiver
+ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:99:9-110:20
+	android:enabled
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:102:13-36
+	android:exported
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:103:13-37
+	tools:targetApi
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:104:13-32
+	android:directBootAware
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:101:13-44
+	android:name
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:100:13-88
+intent-filter#android.intent.action.BOOT_COMPLETED+android.intent.action.TIMEZONE_CHANGED+android.intent.action.TIME_SET
+ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:105:13-109:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:106:17-79
+	android:name
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:106:25-76
+action#android.intent.action.TIME_SET
+ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:107:17-73
+	android:name
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:107:25-70
+action#android.intent.action.TIMEZONE_CHANGED
+ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:108:17-81
+	android:name
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:108:25-78
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver
+ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:111:9-120:20
+	android:enabled
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:114:13-72
+	android:exported
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:115:13-37
+	tools:targetApi
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:116:13-32
+	android:directBootAware
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:113:13-44
+	android:name
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:112:13-99
+intent-filter#androidx.work.impl.background.systemalarm.UpdateProxies
+ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:117:13-119:29
+action#androidx.work.impl.background.systemalarm.UpdateProxies
+ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:118:17-98
+	android:name
+		ADDED from [android.arch.work:work-runtime:1.0.1] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\work-runtime-1.0.1.aar\9a4153809466869c263fcfb44348a272\AndroidManifest.xml:118:25-95
+provider#android.arch.lifecycle.ProcessLifecycleOwnerInitializer
+ADDED from [android.arch.lifecycle:extensions:1.1.0] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\extensions-1.1.0.aar\6df172887717b14ceeb3145aa8ba7194\AndroidManifest.xml:23:9-27:43
+	android:authorities
+		ADDED from [android.arch.lifecycle:extensions:1.1.0] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\extensions-1.1.0.aar\6df172887717b14ceeb3145aa8ba7194\AndroidManifest.xml:25:13-68
+	android:multiprocess
+		ADDED from [android.arch.lifecycle:extensions:1.1.0] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\extensions-1.1.0.aar\6df172887717b14ceeb3145aa8ba7194\AndroidManifest.xml:27:13-40
+	android:exported
+		ADDED from [android.arch.lifecycle:extensions:1.1.0] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\extensions-1.1.0.aar\6df172887717b14ceeb3145aa8ba7194\AndroidManifest.xml:26:13-37
+	android:name
+		ADDED from [android.arch.lifecycle:extensions:1.1.0] C:\Users\LONGBRIDGE\.gradle\caches\transforms-1\files-1.1\extensions-1.1.0.aar\6df172887717b14ceeb3145aa8ba7194\AndroidManifest.xml:24:13-83

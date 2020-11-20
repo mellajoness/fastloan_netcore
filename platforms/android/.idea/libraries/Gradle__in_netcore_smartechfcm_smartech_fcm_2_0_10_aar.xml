@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: in.netcore.smartechfcm:smartech-fcm:2.0.10@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/smartech-fcm-2.0.10.aar/959eccdbe2e1654728ea8e80816fc186/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/smartech-fcm-2.0.10.aar/959eccdbe2e1654728ea8e80816fc186/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/in.netcore.smartechfcm/smartech-fcm/2.0.10/69e485c9343a437a7237ba23cec863ba007e4077/smartech-fcm-2.0.10-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
