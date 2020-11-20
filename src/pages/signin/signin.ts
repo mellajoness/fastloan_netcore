@@ -212,7 +212,7 @@ console.log('Body', req);
           Smartech.login(payloadata.CUSTOMER_ID);
           console.log("Login successful")
           Smartech.track("USER_LOGIN", payloadata);
-          
+           
         const alert = this.alertCtrl.create({
           title: '<strong>Update Required!</strong>',
           message: res.message,
